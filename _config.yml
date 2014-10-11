@@ -1,0 +1,11 @@
+title: "Brighton Japan Festival"
+description: ""
+baseurl: /
+url: http://
+timezone: Europe/London
+image: /images/banner.png
+locale: en_GB
+author: Adam Bouqdib
+markdown: kramdown
+permalink: /:categories/:title.html
+v: 1
