@@ -2,7 +2,7 @@
 layout: page
 title: Areas
 alias: areas
-banner: images/banner.jpg
+banner: /images/banner.jpg
 ---
 In many ways, Glastonbury is like loads of different festivals converging on the same gorgeous countryside for the weekend. Each area of the Festival has its own character, its own loyal fans and its own special attractions: so Silver Hayes (formerly the Dance Village) is as distinct from the Green Fields as the Circus &amp; Theatre fields are from The Park.
 
