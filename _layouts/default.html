@@ -11,9 +11,9 @@
     <title>{{ page.title }} | {{ site.title }}</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/assets/style.css" rel="stylesheet" />
+    <link href="{{site.baseurl}}/assets/style.css" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/assets/ie10-viewport-bug-workaround.js"></script>
+    <script src="{{site.baseurl}}/assets/ie10-viewport-bug-workaround.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -31,7 +31,7 @@
           <span class="icon-bar"></span>
         </button> 
          <a class="navbar-brand brand-small" href="/">
-          <img src="/images/logo_small.png" alt="{{ site.title }}" />
+          <img src="{{site.baseurl}}/images/logo_small.png" alt="{{ site.title }}" />
         </a>
       </div>
       <div class="collapse navbar-collapse">
@@ -39,7 +39,7 @@
         
         {% for item in {{site.data.menu}} %}
           <li {% if item.alias == page.alias or page.categories contains item.alias %}class="active"{% endif %}>
-            <a href="/{% if item.alias != 'home' %}{{ item.alias }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
+            <a href="{{site.baseurl}}/{% if item.alias != 'home' %}{{ item.alias }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
           </li>
         {% endfor %}
         
@@ -58,6 +58,6 @@
   </footer>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script src="/assets/app.js"></script>
+  <script src="{{site.baseurl}}/assets/app.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
       {% capture i %}0{% endcapture %}
       {% for item in site.posts %}
       <div class="item fh {% if {{i}} == '0' %}active{% endif %}">
-        <div class="banner" style="background-image:url({{ item.image }})"></div>
+        <div class="banner" style="background-image:url({{site.baseurl}}{{ item.image }})"></div>
         <div class="container">
         <h3 class="box">{{ item.title }}</h3>
         <p class="box">{{ item.excerpt | strip_html | truncatewords:20 }}</p>
