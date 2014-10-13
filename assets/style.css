@@ -112,7 +112,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
         margin-right: 0;
     }
     .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-        color: #c00 !important;
+        color: #f00 !important;
         background-color: transparent;
     }
     .navbar-inverse {
