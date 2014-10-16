@@ -9,8 +9,9 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | remove:'index.html' }}"/>
     <title>{{ page.title }} | {{ site.title }}</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'>
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <!--link href="http://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'-->
+    <link href="{{site.baseurl}}/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" /-->
     <link href="{{site.baseurl}}/assets/style.css" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{site.baseurl}}/assets/ie10-viewport-bug-workaround.js"></script>
@@ -21,6 +22,7 @@
     <![endif]-->
   </head>
   <body data-spy="scroll" data-target=".navbar-inverse">
+  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
   <div id="nav" class="navbar navbar-inverse affix-top {% if page.slideshow %} navbar-bottom {% endif %}" role="navigation">
     <div class="container">
       <div class="navbar-header">
@@ -31,7 +33,7 @@
           <span class="icon-bar"></span>
         </button> 
          <a class="navbar-brand brand-small" href="/">
-          <img src="{{site.baseurl}}/images/logo_small.png" alt="{{ site.title }}" />
+          <img src="{{site.baseurl}}/images/logo_small.png" alt="{{ site.title }}" id="logo" />
         </a>
       </div>
       <div class="collapse navbar-collapse">
@@ -50,14 +52,16 @@
   </div>
   
   {{content}}
-  {{page.slug}}
+  
   <footer>
     <div class="container">
       <p class="text-left">© 2014 {{ site.title }} • Web design by ABE Media <!--a href="/sitemap">Sitemap</a--></p>
     </div>
   </footer>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="{{site.baseurl}}/lib/jquery/jquery.min.js"></script>
+  <script src="{{site.baseurl}}/lib/bootstrap/js/bootstrap.min.js"></script>
+  <!--script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
+  <!--script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script-->
   <script src="{{site.baseurl}}/assets/app.js"></script>
 </body>
 </html>

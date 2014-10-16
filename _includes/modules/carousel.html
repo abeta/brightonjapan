@@ -1,12 +1,14 @@
-  <div id="carousel-example-generic" class="carousel slide fh" data-ride="carousel">
+  <div id="carousel" class="carousel slide fh" data-ride="carousel">
   <!-- Indicators -->
-    <ol class="carousel-indicators">
-      {% capture i %}0{% endcapture %}
-      {% for item in site.posts %}
-      <li data-target="#carousel" data-slide-to="{{i}}" class="{% if {{i}} == '0' %}active{% endif %}"></li>
-      {% capture i %}{{ i | plus:1 }}{% endcapture %}
-      {% endfor %}
-    </ol>
+    <div class="container rel">
+      <ol class="carousel-indicators">
+        {% capture i %}0{% endcapture %}
+        {% for item in site.posts %}
+        <li data-target="#carousel" data-slide-to="{{i}}" class="{% if {{i}} == '0' %}active{% endif %}"></li>
+        {% capture i %}{{ i | plus:1 }}{% endcapture %}
+        {% endfor %}
+      </ol>
+    </div>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner fh">
@@ -25,10 +27,13 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+    <a class="arrow-down" href="#logo">
+      <span class="glyphicon glyphicon-chevron-down"></span>
     </a>
   </div>

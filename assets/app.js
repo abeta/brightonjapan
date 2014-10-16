@@ -1,12 +1,50 @@
-// navbar affix
-$( window ).resize(function() {
-  $('#nav').affix({
-      offset: {
-        top: $('#nav').offset().top + 20
+// smooth scroll to anchor
+$(function() {
+  $('a[href*=#]:not([href=#],.carousel-control)').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
       }
-  }); 
-})
-.resize();
+    }
+  });
+});
+/*
+var lastScrollTop = 0,
+    direction = 'down';
+$(window).scroll(function(){
+        var st = $(this).scrollTop(), 
+            height = $(this).height() - 50;
+            
+            
+        if(st < lastScrollTop || (st > 0 && st === lastScrollTop)) {
+            direction = 'up';
+        } else if(st > lastScrollTop || (st === 0 && st === lastScrollTop)) {
+            direction = 'down';
+        }
+        console.log(direction);
+        
+        if(st < height) {
+            $('html,body').animate({ scrollTop: () ? 0 : height }, 1000, function(){ lastScrollTop = st; });
+        } else lastScrollTop = st;
+});
+*/
+
+// navbar affix
+$(function() {
+    var offsetFn = function () {
+        return $(window).height() - 75;
+    }
+    $('#nav').affix({
+        offset: {
+            top: offsetFn
+        }
+    }); 
+});
 
 if ($("#countdown").length > 0) {
   jQuery(document).ready(function(){	
@@ -17,7 +55,6 @@ if ($("#countdown").length > 0) {
   });
 }	
 function GetCount(ddate,iid){
-
     dateNow = new Date();	//grab current date
     amount = ddate.getTime() - dateNow.getTime();	//calc milliseconds between dates
     delete dateNow;
