@@ -2,3 +2,4 @@ blog:
     title: Events
     slug: events
     order: 1
+    published: 1
