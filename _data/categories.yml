@@ -6,3 +6,7 @@ events:
     children:
         title: asasas
         published: 1
+        sss:
+            title: sss
+            published: 1
+            slug: sss
