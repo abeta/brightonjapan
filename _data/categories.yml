@@ -1,0 +1,16 @@
+blog:
+    title: Blog
+    slug: blog
+    children:
+        testa:
+            title: 'Test A'
+            slug: testa
+            order: 1
+            published: 1
+        test1:
+            title: 'Test 1'
+            slug: test1
+            order: 2
+            published: 1
+    published: 1
+    order: 1
