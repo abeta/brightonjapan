@@ -8,5 +8,6 @@ events:
         published: 1
         sss:
             title: sss
-            published: 1
             slug: sss
+            description: '<p>z</p>'
+            published: 1
