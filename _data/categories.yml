@@ -11,3 +11,7 @@ events:
             slug: sss
             description: '<p>z</p>'
             published: 1
+hello:
+    title: hello
+    published: 1
+    slug: hello
