@@ -4,5 +4,5 @@ events:
     order: 1
     published: 1
     children:
-        title: aaaa
+        title: aaa
         published: 1
