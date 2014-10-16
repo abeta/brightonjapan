@@ -1,4 +1,4 @@
-blog:
+events:
     title: Events
     slug: events
     order: 1
