@@ -3,3 +3,6 @@ blog:
     slug: events
     order: 1
     published: 1
+    children:
+        title: aaaaa
+        published: 1
