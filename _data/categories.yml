@@ -16,3 +16,7 @@ hello:
     title: Hello
     slug: hello
     published: 1
+a:
+    title: a
+    published: 1
+    slug: a
