@@ -16,9 +16,3 @@ hello:
     title: Hello
     slug: hello
     published: 1
-    order: 0
-a:
-    title: a
-    published: 1
-    slug: a
-    order: 3
