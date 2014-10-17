@@ -13,7 +13,6 @@ events:
             published: 1
             order: 1
 hello:
-    title: hello
-    published: 1
+    title: Hello
     slug: hello
-    order: 1
+    published: 1
