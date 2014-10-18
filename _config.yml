@@ -1,11 +1,43 @@
-title: "Brighton Japan Festival"
-description: ""
-baseurl: /brightonjapan
-url: http://beta.abemedia.co.uk/brightonjapan
+title: 'Brighton Japan Festival'
+description: ''
+permalink: none
 timezone: Europe/London
-image: /images/banner.png
-locale: en_GB
-author: Adam Bouqdib
-markdown: kramdown
-permalink: /:categories/:title.html
-v: 1
+baseurl: /brightonjapan
+relative_permalinks: 'false'
+analytics:
+    provider: google_analytics
+    tracking_id: ''
+    site_id: ''
+    token: ''
+    baseURL: ''
+    idsite: ''
+comments:
+    provider: '1'
+    disqus_shortname: ''
+    appid: ''
+    num_posts: null
+    width: null
+    colorscheme: ''
+    order: ''
+    site_id: ''
+    account: ''
+sharing:
+    provider:
+        - facebook
+        - twitter
+        - google
+        - linkedin
+        - pinterest
+        - stumbleupon
+    style: ''
+    bubbles: ''
+profiles:
+    provider:
+        - facebook
+        - twitter
+    facebook: brightonjapanfestival
+    twitter: brightonjapan15
+    google: ''
+    linkedin: ''
+    youtube: ''
+    pinterest: ''
