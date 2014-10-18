@@ -12,8 +12,5 @@ events:
             description: '<p>z</p>'
             published: 1
             order: 1
-hello:
-    title: Hello
-    slug: hello
-    published: 1
-    order: 3
+areas:
+    slug: areas
