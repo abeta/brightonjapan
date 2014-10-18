@@ -1,7 +1,7 @@
 events:
     title: Events
     slug: events
-    order: 3
+    order: 4
     published: 1
     children:
         title: asasas
@@ -16,3 +16,4 @@ hello:
     title: Hello
     slug: hello
     published: 1
+    order: 3
