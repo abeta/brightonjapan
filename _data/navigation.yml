@@ -1,3 +1,8 @@
 title: Home
 url: /.html
 published: 1
+aa:
+    title: aa
+    slug: aa
+    url: /aa.html
+    published: 1
