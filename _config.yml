@@ -23,9 +23,9 @@ profiles:
     twitter: brightonjapan15
     
 defaults:
-  -
+-
     scope:
-      path: "events"
+      path: ""
       type: "posts"
     values:
-      layout: "pages"
+      layout: "page"
