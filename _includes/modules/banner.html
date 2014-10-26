@@ -1,6 +1,6 @@
   {% capture banner %}{% if page.banner %}{{ page.banner }}{% else %}{{ page.image }}{% endif %}{% endcapture %}
   {% if banner %}
-  <div class="banner" style="background-image: url({{site.baseurl}}{{ banner }})">
+  <div class="banner" style="background-image: url(http://cdn.abemedia.co.uk/?w=1920&h=400&file={{site.baseurl}}{{ banner }})">
     <div class="container">
       <div class="banner-text">
         {% if page.start_date %}<div class="box box-white h3">{{ page.start_date | date: '%A, %d %B %Y' }}</div>{% endif %}
