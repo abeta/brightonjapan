@@ -21,11 +21,16 @@ profiles:
         - twitter
     facebook: brightonjapanfestival
     twitter: brightonjapan15
-    
 defaults:
 -
     scope:
         path: ""
         type: "posts"
+    values:
+        layout: "page"
+-
+    scope:
+        path: ""
+        type: "pages"
     values:
         layout: "page"
