@@ -6,12 +6,6 @@ events:
     children:
         title: asasas
         published: 1
-        sss:
-            title: sss
-            slug: sss
-            description: '<p>z</p>'
-            published: 1
-            order: 1
 areas:
     title: Areas
     slug: areas
