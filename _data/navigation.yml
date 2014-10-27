@@ -4,23 +4,27 @@ home:
     slug: home
     url: /ss.html
     published: 1
+    type: home
 info:
     title: Info
     japanese: 情報
     slug: info
     url: /info.html
     published: 1
+    type: page
     children:  
         map:
             title: Map
             japanese: マップ
             slug: map
             url: /map.html
+            type: page
             published: 1
         history:
             title: History
             japanese: 歴史
             slug: history
+            type: page
             url: /history.html
             published: 1
 events:
@@ -28,28 +32,33 @@ events:
     japanese: イベント
     slug: events
     url: /events.html
+    type: category
     published: 1
 areas:
     title: Areas
     japanese: エリア
     slug: areas
     url: /areas.html
+    type: page
     published: 1
 gallery:
     title: Gallery
     japanese: ギャラリー
     slug: gallery
     url: /gallery.html
+    type: page
     published: 1
 tickets:
     title: Tickets
     japanese: チケット
     slug: tickets
     url: /tickets.html
+    type: page
     published: 1
 contact:
     title: Contact
     japanese: コンタクト
     slug: contact
     url: /contact.html
+    type: contact
     published: 1
