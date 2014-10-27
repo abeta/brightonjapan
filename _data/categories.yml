@@ -2,7 +2,7 @@ events:
     title: Events
     slug: events
     published: 1
-    fields: contact-form.xml
+    fields: event-fields.xml
     children:
         title: asasas
         published: 1
