@@ -10,7 +10,7 @@ info:
     url: /info.html
     published: 1
     type: page
-    children:  
+    children:
         map:
             title: Map
             slug: map
