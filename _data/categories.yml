@@ -1,8 +1,8 @@
 events:
     title: Events
     slug: events
-    order: 4
     published: 1
+    fields: contact-form.xml
     children:
         title: asasas
         published: 1
