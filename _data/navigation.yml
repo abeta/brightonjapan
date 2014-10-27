@@ -60,5 +60,5 @@ contact:
     japanese: コンタクト
     slug: contact
     url: /contact.html
-    type: contact
+    type: form
     published: 1
