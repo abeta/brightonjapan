@@ -2,23 +2,12 @@
 <form>
     <fields>
         <fieldset name="name">
-            <field name="title" type="text" label="JGLOBAL_TITLE" required="true" class="form-control" placeholder="JFIELD_TITLE_DESC" />
-            <field name="slug" type="text" label="Slug" class="form-control" placeholder="JFIELD_ALIAS_PLACEHOLDER" filter="cmd" />
         </fieldset>
         <fieldset name="general">
-            <field name="content" type="textarea" label="Content" filter="safehtml" class="form-control editor" required="true" />
+            <field name="more" type="textarea" label="more" filter="safehtml" class="form-control" required="true" />
         </fieldset>
-        <fieldset name="options" addfieldpath="/App/Model/Forms/Fields/">
-			<field name="published" type="list" default="1" label="JPUBLISHED" description="JFIELD_PUBLISHED_DESC" class="form-control" filter="int">
-				<option value="0">No</option>
-				<option value="1">Yes</option>
-			</field>
-			<field name="parent" type="page" label="Parent" description="Parent" class="form-control" limit="true" />
-			<field name="order" type="text" label="Order" description="Order" class="form-control" />
-            <field name="tags" type="tag" label="JTAG" description="JTAG_DESC" mode="ajax" class="form-control" />
-            <field name="_path" type="hidden" />
-            <field name="_sha" type="hidden" />
-            <field name="_layout" type="hidden" default="default" />
+        <fieldset name="options">
+            <field name="stuff" type="text" label="stuff" filter="safehtml" class="form-control" required="true" />
         </fieldset>
     </fields>
 </form>
