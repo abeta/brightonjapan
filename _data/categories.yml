@@ -4,11 +4,11 @@ events:
     published: 1
     fields: event-fields.xml
     children:
-        published: 1
         title: asasas
-    order: 1
+        published: 1
+    order: 0
 areas:
     title: Areas
     slug: areas
     published: 1
-    order: 0
+    order: 1
