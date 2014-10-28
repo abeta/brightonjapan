@@ -6,7 +6,10 @@ events:
     children:
         title: asasas
         published: 1
-    order: 0
+        test:
+            title: test
+            slug: test
+            published: 1
 areas:
     title: Areas
     slug: areas
