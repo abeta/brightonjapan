@@ -39,6 +39,6 @@ collections:
         title: Areas
         icon: 'map-marker'
         output: true
-        permalink: /areas/:path
+        permalink: /areas/:path/
         layout: "page"
     
