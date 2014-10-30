@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields>
+        <fieldset name="options">
+            <field name="area" type="postlist" label="Area" filter="string" class="form-control" category="areas" />
+        </fieldset>
+        <fieldset name="extra" title="Event Details">
+            <field name="start_date" type="calendar" label="Start Date" filter="date" class="form-control" />
+            <field name="end_date" type="calendar" label="End Date" filter="date" class="form-control" />
+        </fieldset>
+    </fields>
+</form>
