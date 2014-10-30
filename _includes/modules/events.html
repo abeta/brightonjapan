@@ -1,0 +1,11 @@
+  {% if include.category %}{% capture category %}{{ include.category }}{% endcapture %}{% else %}{% capture category %}{{page.alias}}{% endcapture %}{% endif %}
+  <ul class="box-list box-list-sm">
+    {% for item in site.categories[category] %}
+    <li><a href="{{site.baseurl}}{{ item.url }}" >
+    <figure>
+      <div class="widethumb img" style="background-image: url(http://cdn.abemedia.co.uk/432x243{{site.baseurl}}{{ item.image }})"></div>
+    </figure>
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.excerpt | strip_html | truncatewords:20 }}</p>
+    </a>{% endfor %}
+  </ul>

@@ -1,0 +1,37 @@
+-
+    title: Home
+    japanese: ホーム
+    alias: home
+-
+    title: Info
+    japanese: 情報
+    alias: info
+    items:  
+    -
+        title: Map
+        japanese: マップ
+        alias: map
+    -
+        title: History
+        japanese: 歴史
+        alias: history
+-
+    title: Events
+    japanese: イベント
+    alias: events
+-
+    title: Areas
+    japanese: エリア
+    alias: areas
+-
+    title: Gallery
+    japanese: ギャラリー
+    alias: gallery
+-
+    title: Tickets
+    japanese: チケット
+    alias: tickets
+-
+    title: Contact
+    japanese: コンタクト
+    alias: contact

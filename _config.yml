@@ -1,0 +1,36 @@
+title: 'Brighton Japan Festival 2015'
+permalink: none
+timezone: Europe/London
+baseurl: /brightonjapan
+relative_permalinks: false
+analytics:
+    provider: google_analytics
+comments:
+    provider: '1'
+sharing:
+    provider:
+        - facebook
+        - twitter
+        - google
+        - linkedin
+        - pinterest
+        - stumbleupon
+profiles:
+    provider:
+        - facebook
+        - twitter
+    facebook: brightonjapanfestival
+    twitter: brightonjapan15
+defaults:
+  - 
+    scope:
+        path: ""
+        type: "posts"
+    values:
+        layout: "page"
+  - 
+    scope:
+        path: ""
+        type: "pages"
+    values:
+        layout: "page"
