@@ -36,9 +36,8 @@ defaults:
         layout: "page"
 collections:
     areas:
-        title: Areas
+        title: 'Areas'
         icon: 'map-marker'
         output: true
-        permalink: /areas/:path/
         layout: "page"
     
