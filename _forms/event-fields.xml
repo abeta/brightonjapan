@@ -2,9 +2,9 @@
 <form>
     <fields>
         <fieldset name="options">
-            <field name="image" type="media" label="Image" filter="string" class="form-control" />
             <field name="parent" type="itemlist" label="Parent Event" filter="string" class="form-control" app="events" />
             <field name="area" type="itemlist" label="Area" filter="string" class="form-control" app="areas" />
+            <field name="image" type="media" label="Image" filter="string" class="form-control" />
         </fieldset>
         <fieldset name="extra" title="Event Details">
             <field name="start_date" type="calendar" label="Start Date" filter="date" class="form-control" />
