@@ -2,6 +2,7 @@
 <form>
     <fields>
         <fieldset name="options">
+            <field name="image" type="media" label="Image" filter="file" class="form-control" />
             <field name="parent" type="itemlist" label="Parent Event" filter="string" class="form-control" app="events" />
             <field name="area" type="itemlist" label="Area" filter="string" class="form-control" app="areas" />
         </fieldset>
