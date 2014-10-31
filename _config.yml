@@ -45,6 +45,7 @@ collections:
         title: Events
         icon: calendar
         output: true
+        fields: event-fields.xml
     areas:
         title: Areas
         icon: 'map-marker'
