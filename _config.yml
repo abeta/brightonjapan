@@ -41,9 +41,12 @@ defaults:
     values:
         layout: "page"
 collections:
+    events:
+        title: Events
+        icon: calendar
+        output: true
     areas:
-        title: 'Areas'
+        title: Areas
         icon: 'map-marker'
         output: true
-        layout: "page"
     
