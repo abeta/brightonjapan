@@ -41,9 +41,7 @@ defaults:
     values:
         layout: "page"
 collections:
-    posts: 
-        title: Posts
-        icon: files
+    posts: ""
     events:
         title: Events
         icon: calendar
