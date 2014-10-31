@@ -4,8 +4,6 @@ events:
     published: 1
     fields: event-fields.xml
     children:
-        title: asasas
-        published: 1
         test:
             title: test
             slug: test
