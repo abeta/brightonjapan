@@ -2,7 +2,8 @@
 <form>
     <fields>
         <fieldset name="options">
-            <field name="area" type="postlist" label="Area" filter="string" class="form-control" category="areas" />
+            <field name="parent" type="itemlist" label="Parent Event" filter="string" class="form-control" app="events" />
+            <field name="area" type="itemlist" label="Area" filter="string" class="form-control" app="areas" />
         </fieldset>
         <fieldset name="extra" title="Event Details">
             <field name="start_date" type="calendar" label="Start Date" filter="date" class="form-control" />
