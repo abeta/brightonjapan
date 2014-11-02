@@ -41,7 +41,7 @@
         
         {% for item in {{site.data.menu}} %}
           <li {% if item.alias == page.alias or page.categories contains item.alias %}class="active"{% endif %}>
-            <a href="{{site.baseurl}}/{% if item.alias != 'home' %}{{ item.alias }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
+            <a href="{{site.baseurl}}{% if item.alias != 'home' %}{{ item.alias }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
           </li>
         {% endfor %}
         
