@@ -9,6 +9,7 @@
         <fieldset name="extra" title="Event Details">
             <field name="start_date" type="calendar" label="Start Date" filter="date" class="form-control" />
             <field name="end_date" type="calendar" label="End Date" filter="date" class="form-control" />
+            <field name="price" type="text" label="Price" filter="string" class="form-control" />
         </fieldset>
     </fields>
 </form>
