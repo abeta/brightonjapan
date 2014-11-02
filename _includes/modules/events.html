@@ -1,6 +1,5 @@
-  {% if include.category %}{% capture category %}{{ include.category }}{% endcapture %}{% else %}{% capture category %}{{page.alias}}{% endcapture %}{% endif %}
   <ul class="box-list box-list-sm">
-    {% for item in site[category] %}
+    {% for item in include.category %}
     <li><a href="{{site.baseurl}}{{ item.url }}" >
     <figure>
       <div class="widethumb img" style="background-image: url(http://cdn.abemedia.co.uk/432x243{{site.baseurl}}{{ item.image }})"></div>
