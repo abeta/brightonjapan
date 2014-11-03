@@ -41,8 +41,9 @@
         
         {% for item in site.data.navigation %}
           <li {% if item[1].slug == page.slug or page.categories contains item[1].slug %}class="active"{% endif %}>
-            <a href="{{site.baseurl}}{% if item.slug[1] != 'index' %}{{ item.slug }}.html{% endif %}">
-              {% if item.slug[1] != 'index' %}{{ item[1].title }}{% else %}Home{% endif %} <small>{{ site.data.japanese[item[1].slug] }}</small>
+            {% if item.slug[1] != 'index' %}<a href="{{site.baseurl}}{{ item.slug }}.html">{{ item[1].title }}
+            {% else %}<a href="{{site.baseurl}}">Home{% endif %} 
+              <small>{{ site.data.japanese[item[1].slug] }}</small>
             </a>
         {% endfor %}
         
