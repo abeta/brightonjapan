@@ -42,7 +42,7 @@
         {% for item in site.data.navigation %}
           <li {% if item[1].slug == page.slug or page.categories contains item[1].slug %}class="active"{% endif %}>
             {% if item[1].slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item[1].slug }}.html">{{ item[1].title }}{% endif %} 
-              <small>{{ site.data.japanese[item[1].slug][1] }}</small>
+              <small></small>
             </a>
           </li>
         {% endfor %}
@@ -52,7 +52,7 @@
       <!--/.nav-collapse -->
     </div>
   </div>
-  
+  {{ site.data.japanese | jsonify }}
   {{content}}
   
   <footer>
