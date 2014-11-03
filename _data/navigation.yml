@@ -27,7 +27,6 @@ events:
     title: Events
     slug: events
     url: /events.html
-    type: category
     published: 1
 areas:
     title: Areas
