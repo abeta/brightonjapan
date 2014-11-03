@@ -39,9 +39,9 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
         
-        {% for item in {{site.data.menu}} %}
+        {% for key, item in site.data.navigation %}
           <li {% if item.slug == page.slug or page.categories contains item.slug %}class="active"{% endif %}>
-            <a href="{{site.baseurl}}{% if item.slug != site.data.navigation[0].slug %}{{ item.slug }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
+            <a href="{{site.baseurl}}{% if item.slug != site.data.navigation[0].slug %}{{ item.slug }}.html{% endif %}">{{ item.title }} <small>{{ site.data.japanese[key] }}</small></a>
           </li>
         {% endfor %}
         
