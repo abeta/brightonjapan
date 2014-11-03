@@ -1,6 +1,6 @@
 index:
-    title: Home
-    slug: home
+    title: 'Brighton Japan Festival'
+    slug: index
     url: /index.html
     published: 1
     type: home
