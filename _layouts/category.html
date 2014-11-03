@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% include modules/banner.html %}
+
+<div class="section" id="content">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
+
+<div class="grey section">
+  <div class="container">
+    <h2 class="page-header">{{ page.title }}</h2> 
+    {% include modules/events.html category=site[page.slug] parent="" %} 
+  </div>
+</div>
+  
