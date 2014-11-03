@@ -239,7 +239,7 @@ a.box-red:hover {
     margin: 0;
     background: #fff;
 }
-.box-list>li figure::before{
+.box-list>li:hover figure::before{
     position: absolute;
     left: 50%;
     top: 50%;
