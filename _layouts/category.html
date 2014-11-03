@@ -2,7 +2,6 @@
 layout: default
 ---
 {% include modules/banner.html %}
-{% capture slug %}{{page.slug}}{% endcapture %}
 
 <div class="section" id="content">
   <div class="container">
@@ -13,7 +12,7 @@ layout: default
 <div class="grey section">
   <div class="container">
     <h2 class="page-header">{{ page.title }}</h2> 
-    {% include modules/events.html category=site[slug] parent="" %} 
+    {% include modules/events.html category=page.slug parent="" %} 
   </div>
 </div>
   
