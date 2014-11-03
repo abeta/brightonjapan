@@ -327,6 +327,9 @@ a.box-red:hover {
     background-color: #161616;
     color: #fff!important;
 }
+.black * {
+    color: #fff;
+}
 .rel {
     position: relative;
 }
