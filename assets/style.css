@@ -239,7 +239,7 @@ a.box-red:hover {
     margin: 0;
     background: #fff;
 }
-.box-list>li figure ::before{
+.box-list>li figure::before{
     position: absolute;
     left:50%;
     top:50%;
@@ -247,6 +247,9 @@ a.box-red:hover {
     height:100%;
     margin-top:-50%;
     margin-left:-50%;
+    background:#900;
+    content: "";
+    display:table;
 }
 .box-list>li figure * {
     -webkit-transition: all 0.4s ease-in-out;
