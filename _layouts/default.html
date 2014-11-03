@@ -44,6 +44,7 @@
             {% if item[1].slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item[1].slug }}.html">{{ item[1].title }}{% endif %} 
               <small>{{ site.data.japanese[item[1].slug] }}</small>
             </a>
+          </li>
         {% endfor %}
         
         </ul>
