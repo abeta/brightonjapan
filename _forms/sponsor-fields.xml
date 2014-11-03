@@ -4,6 +4,7 @@
         <fieldset name="options">
             <field name="website" type="url" label="Website" filter="url" class="form-control" />
             <field name="image" type="media" label="Logo" filter="string" class="form-control" />
+            <field name="order" type="hidden" filter="int" />
         </fieldset>
     </fields>
 </form>
