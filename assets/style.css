@@ -264,8 +264,8 @@ a.box-red:hover {
     -o-transform: scale(1.2) rotate(-3deg);
     -ms-transform: scale(1.2) rotate(-3deg);
     transform: scale(1.2) rotate(-3deg);
-    filter: alpha(opacity=75);
-    opacity: .75;
+    filter: alpha(opacity=50);
+    opacity: .5;
 }
 .box-list>li figure>.label {
     position:absolute;
@@ -289,8 +289,8 @@ a.box-red:hover {
     transition: all 0.6s ease;
 }
 .box-list>li figure:hover>figcaption {
-    opacity: 1;
     filter: alpha(opacity=100);
+    opacity: 1;
     bottom: 0;
 }
 @media (min-width: 768px) {
