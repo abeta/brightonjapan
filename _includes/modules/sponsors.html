@@ -1,6 +1,6 @@
   <ul class="box-list box-list-xs">
     {% for item in include.category %}{% if include.parent == item.parent %}
     <li><a title="{{ item.title }}" href="{{ item.website }}" >
-    <div class="widethumb img" style="background-image: url(http://cdn.abemedia.co.uk/432x0{{site.baseurl}}{{ item.image }})"></div>
+    <div class="thumb-wide thumb-contain img" style="background-image: url(http://cdn.abemedia.co.uk/432x0{{site.baseurl}}{{ item.image }})"></div>
     </a>{% endif %}{% endfor %}
   </ul>

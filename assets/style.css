@@ -174,19 +174,23 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     background-color: #c00;
     border-color: #c00;
 }
-
-.widethumb {
+.thumb-wide {
     height: 0;
     padding: 0 0 56%;
     background-size: cover;
     background-position: center;
 }
-.squarethumb {
+.thumb-square {
     height: 0;
     padding: 0 0 100%;
     background-size: cover;
     background-position: center;
 }
+.thumb-contain {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .box {
     background: rgba(0,0,0,0.75);
     padding: 15px;
