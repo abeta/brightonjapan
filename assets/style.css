@@ -333,11 +333,13 @@ a.box-red:hover {
 .grey {
     background-color: #f0f0f0;
 }
+.red {
+    background-color: #900;
+}
 .black {
     background-color: #161616;
-    color: #fff!important;
 }
-.black * {
+.black, .red, .black *, .red * {
     color: #fff;
 }
 .rel {
