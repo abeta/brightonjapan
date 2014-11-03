@@ -199,6 +199,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     background: rgba(255,255,255,0.5);
     color: #000;
 }
+.box-red {
+    background: rgba(255,0,0,0.5);
+}
 a.box {
     display: inline-block;
 }
