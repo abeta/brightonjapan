@@ -56,4 +56,10 @@ collections:
         title: Areas
         icon: 'map-marker'
         output: true
+        fields: "area-fields.xml"
+    sponsors:
+        title: Sponsors
+        icon: 'money'
+        output: true
+        fields: "sponsor-fields.xml"
     
