@@ -237,7 +237,16 @@ a.box-red:hover {
     position: relative;
     overflow: hidden;
     margin: 0;
-    background: transparent;
+    background: #fff;
+}
+.box-list>li figure ::before{
+    position: absolute;
+    left:50%;
+    top:50%;
+    width:15%;
+    height:100%;
+    margin-top:-50%;
+    margin-left:-50%;
 }
 .box-list>li figure * {
     -webkit-transition: all 0.4s ease-in-out;
