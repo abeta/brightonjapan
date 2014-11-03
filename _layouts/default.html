@@ -40,10 +40,10 @@
         <ul class="nav navbar-nav">
         
         {% for item in site.data.navigation %}
-          <li {% if item[1].slug == page.slug or page.categories contains item[1].slug %}class="active"{% endif %}>
-            {% if item[1].slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item[1].slug }}.html">{{ item[1].title }}{% endif %} 
-            {{ item.1.title }}
-              <small>{{ site.data.japanese[item.1.slug] }}</small>
+          {% capture slug %}{{ item[1].slug }}{% endcapture %}
+          <li {% if slug == page.slug or page.categories contains slug %}class="active"{% endif %}>
+            {% if slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ slug }}.html">{{ item[1].title }}{% endif %}
+              <small>{{ site.data.japanese[slug] }}</small>
             </a>
           </li>
         {% endfor %}
