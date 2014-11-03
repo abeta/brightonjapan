@@ -241,15 +241,15 @@ a.box-red:hover {
 }
 .box-list>li figure::before{
     position: absolute;
-    left:50%;
-    top:50%;
-    width:15%;
-    height:100%;
-    margin-top:-50%;
-    margin-left:-50%;
-    background:#900;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    background: #900;
     content: "";
-    display:table;
+    border-radius: 50%;
 }
 .box-list>li figure * {
     -webkit-transition: all 0.4s ease-in-out;
