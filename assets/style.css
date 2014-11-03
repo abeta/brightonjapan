@@ -422,3 +422,6 @@ a.box-red:hover {
 	-o-animation-name: bounce;
 	animation-name: bounce;
 }
+.bg-pattern-1 {
+    background-image:url(pattern_1.png);
+}
