@@ -44,7 +44,6 @@ tickets:
     title: Tickets
     slug: tickets
     url: /tickets.html
-    type: page
     published: 1
 contact:
     title: Contact
