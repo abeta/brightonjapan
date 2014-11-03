@@ -40,8 +40,8 @@
         <ul class="nav navbar-nav">
         
         {% for item in site.data.navigation %}
-          <li {% if item.slug == page.slug or page.categories contains item.slug %}class="active"{% endif %}>
-            <a href="{{site.baseurl}}{% if item.slug != 'index' %}{{ item.slug }}.html{% endif %}">{{ item.title }} <small>{{ site.data.japanese[item.slug] }}</small></a>
+          <li {% if item[1].slug == page.slug or page.categories contains item[1].slug %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}{% if item.slug[1] != 'index' %}{{ item.slug }}.html{% endif %}">{{ item[1].title }} <small>{{ site.data.japanese[item[1].slug] }}</small></a>
           </li>
         {% endfor %}
         
