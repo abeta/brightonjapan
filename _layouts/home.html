@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% include modules/carousel.html category=site.events parent="" %}
+
+  <div class="section" id="content">
+    <div class="container">
+      <h1 class="page-header">{{ page.title }}</h1>
+      <p class="lead">{{ content | strip_html | newline_to_br }}</p>
+    </div>
+  </div>
+  
+  <div class="black section">
+    <div class="container">
+      <a class="btn btn-danger btn-lg pull-right">Buy Tickets</a>
+      <div class="datebox pull-right" id="countdown" data-date="9-14-2015 00:00:00"></div>
+      <p class="h3" style="font-size: 40px;margin: 0;">14th - 20th September, 2015</p>
+    </div>
+  </div>
+  
+  <div class="grey section">
+    <div class="container">
+      <h2 class="page-header">Events</h2> 
+      {% include modules/events.html category=site.events parent="" %} 
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="container">
+      <h2 class="page-header">Areas</h2> 
+      {% include modules/events.html category=site.areas %} 
+    </div>
+  </div>
+  
+  <div class="black section">
+    <div class="container">
+      <h2 class="page-header">Sponsors</h2> 
+      {% include modules/events.html category=site.sponsors %} 
+    </div>
+  </div>
