@@ -23,7 +23,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar-inverse">
   <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
-  <div id="nav" class="navbar navbar-inverse affix-top {% if page.slideshow %} navbar-bottom {% endif %}" role="navigation">
+  <div id="nav" class="navbar navbar-inverse affix-top {% if page.slug == site.data.navigation[0].slug %} navbar-bottom {% endif %}" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,8 +40,8 @@
         <ul class="nav navbar-nav">
         
         {% for item in {{site.data.menu}} %}
-          <li {% if item.alias == page.alias or page.categories contains item.alias %}class="active"{% endif %}>
-            <a href="{{site.baseurl}}{% if item.alias != 'home' %}{{ item.alias }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
+          <li {% if item.slug == page.slug or page.categories contains item.slug %}class="active"{% endif %}>
+            <a href="{{site.baseurl}}{% if item.slug != site.data.navigation[0].slug %}{{ item.slug }}.html{% endif %}">{{ item.title }} <small>{{ item.japanese }}</small></a>
           </li>
         {% endfor %}
         
