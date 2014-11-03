@@ -188,7 +188,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     background-position: center;
 }
 .box {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.75);
     padding: 15px;
     font-weight: 800;
     text-transform: uppercase;
@@ -196,19 +196,22 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     margin: 0;
 }
 .box-white {
-    background: rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.75);
     color: #000;
 }
-.box-red {
-    background: rgba(255,0,0,0.5);
+.box-red:hover {
+    background: rgba(255,0,0,0.75);
 }
 a.box {
     display: inline-block;
 }
-a.box:hover {
-    background: rgba(255,0,0,0.5);
+a.box:hover, .box-red {
+    background: rgba(255,0,0,0.75);
     color: #fff;
     text-decoration:none;
+}
+a.box-red:hover {
+    background: rgba(255,0,0,0.9);
 }
 
 .box-list {
