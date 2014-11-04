@@ -14,8 +14,8 @@ layout: default
       {% for item in site.events %}{% if item.ticket %}
       <div class="col-md-6">
         <div class="box red bg-pattern-2">
-          <div class="btn-group pull-right">
-            <span class="label label-warning label-lg">&pound;{{ item.price }}</span>
+          <div class="input-group pull-right">
+            <span class="input-group-addon">&pound;{{ item.price }}</span>
             <a class="btn btn-warning btn-lg" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
           </div>
           <h3 class="media-heading">{{ item.title }}</h3>
@@ -25,4 +25,9 @@ layout: default
       {% endif %}{% endfor %}
     </div>
   </div>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon">@</span>
+  <input type="text" class="form-control" placeholder="Username">
 </div>
