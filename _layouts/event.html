@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% include modules/banner.html %}
+
+<div class="section" id="content">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
+{% if site[page.collection] | where parent == page.slug %}
+<div class="grey section">
+  <div class="container">
+    <h2 class="page-header">{{ page.title }}</h2> 
+    {% include module type="events" category="events" parent=page.slug %} 
+  </div>
+</div>
+{% endif %}

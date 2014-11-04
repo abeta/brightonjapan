@@ -1,5 +1,5 @@
   <ul class="box-list box-list-md">
-    {% for item in site[include.category] %}{% if include.parent == item.parent %}
+    {% for item in site[include.category] | where include.parent == item.parent %}
     <li><a href="{{site.baseurl}}{{ item.url }}" >
     <figure>
       <div class="thumb-wide img" style="background-image: url(http://cdn.abemedia.co.uk/432x243{{site.baseurl}}{{ item.image }})"></div>
