@@ -5,10 +5,9 @@ layout: default
 
 <div class="section" id="content">
   <div class="container">
-  <h1>ha</h1>
     {{ content }}
   </div>
 </div>
 {% if site[page.collection] | where parent == page.slug %}
-{% include module module="events" category="events" parent=page.slug %} 
+{% include module module="events" category=page.collection parent=page.slug %} 
 {% endif %}
