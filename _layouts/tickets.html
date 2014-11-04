@@ -10,13 +10,17 @@ layout: default
 </div>
 <div class="section black" id="tickets">
   <div class="container">
-    {% for item in site.events %}{% if item.ticket %}
-    <div class="box red bg-pattern-2">
-      <a class="btn btn-primary btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
-      <h3 class="media-heading">{{ item.title }} <small>&pound;{{ item.price }}</small></h3>
-      <p></p>
+    <div class="row">
+      {% for item in site.events %}{% if item.ticket %}
+      <div class="col-md-6">
+        <div class="box red bg-pattern-2">
+          <a class="btn btn-primary btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
+          <h3 class="media-heading">{{ item.title }} <small>&pound;{{ item.price }}</small></h3>
+          <p></p>
+        </div>
+      </div>
+      <br>
+      {% endif %}{% endfor %}
     </div>
-    <br>
-    {% endif %}{% endfor %}
   </div>
 </div>
