@@ -40,6 +40,12 @@ defaults:
         type: "areas"
     values:
         layout: "page"
+  - 
+    scope:
+        path: ""
+        type: "events"
+    values:
+        layout: "event"
 collections:
     events:
         title: Events
