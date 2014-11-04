@@ -14,10 +14,21 @@ layout: default
     <div class="row">
       {% for area in site.areas %}
       <div class="col-md-6">
-        <h3>{{ area.title }}</h3>
-          {% for event in site.events %}{% if event.area == area.slug %}
-            {{ event.start_date | date_to_string }} {{ event.title }}
-          {% endif %}{% endfor %}
+        <div class="red bg-pattern-2">
+          <h3>{{ area.title }}</h3>
+          <ul class="media-list">
+            {% for event in site.events %}{% if event.area == area.slug %}
+            <li class="media">
+              <a class="media-left" href="#">
+                <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%m' }}</small></span></div>
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">{{ event.title }}</h4>
+              </div>
+            </li>
+            {% endif %}{% endfor %}
+          </ul>
+        </div>
       </div>
       {% endfor %}
     </div>
