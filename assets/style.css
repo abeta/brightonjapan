@@ -245,6 +245,9 @@ a.thumb, a.thumb:hover {
     border-bottom: 3px solid #c00;
     margin-bottom: 7px;
 }
+.red .thumb:hover h3 {
+    border-bottom: 3px solid #000;
+}
 .thumb p {
     clear: both;
 }
