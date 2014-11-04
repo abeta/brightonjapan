@@ -3,8 +3,8 @@
     <div class="col-sm-6 col-md-4"><a href="{{site.baseurl}}{{ item.url }}" >
     <figure>
       <div class="thumb-wide img" style="background-image: url(http://cdn.abemedia.co.uk/432x243{{site.baseurl}}{{ item.image }})"></div>
-      <h3 class="label">{{ item.title }}</h3>
-      <figcaption>{{ item.content | strip_html | truncatewords:20 }}</p>
     </figure>
+    <h3>{{ item.title }}</h3>
+    <p class="text-mute">{{ item.content | strip_html | truncatewords:20 }}</p>
     </a><br></div>{% endif %}{% endif %}{% endfor %}
   </div>
