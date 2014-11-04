@@ -16,6 +16,7 @@ layout: default
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
           <h3 class="media-heading">{{ area.title }}</h3>
+          <hr>
           <div class="media-list">
             {% for event in site.events %}{% if event.area == area.slug %}
             <a class="media" href="{{ site.baseurl }}{{ event.url }}">
