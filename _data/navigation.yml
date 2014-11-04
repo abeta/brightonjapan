@@ -46,7 +46,7 @@ tickets:
     url: /tickets.html
     published: 1
 contact:
-    title: 'Contact Us '
+    title: 'Contact Us'
     slug: contact
     url: /contact.html
     type: form
