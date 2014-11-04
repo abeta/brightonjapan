@@ -45,7 +45,7 @@ defaults:
         path: ""
         type: "events"
     values:
-        layout: "page"
+        layout: "event"
 collections:
     events:
         title: Events
