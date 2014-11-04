@@ -2,6 +2,6 @@
     <div class="container">
     {% if include.title %}<h2 class="page-header">{{ include.title }}</h2>{% endif %}
     {% capture module %}modules/{{ include.module }}.html{% endcapture %}
-    {% include {{module}} %}
+    {% include {{module}} params=include %}
     </div>
   </section>
