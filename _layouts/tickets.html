@@ -7,9 +7,9 @@ layout: default
   <div class="container">
     {{ content }}
     <hr>
-    {% for item in site.events | where price > 0 %}
+    {% for item in site.events %}{% if item.price > 0 %}
     {{ item.title }}
     {{ item.price }}
-    {% endfor %}
+    {% endif %}{% endfor %}
   </div>
 </div>
