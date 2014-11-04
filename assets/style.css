@@ -234,8 +234,9 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
-a.thumb {
+a.thumb, a.thumb:hover {
     color: #333;
+    text-decoration:none;
 }
 .thumb figure {
     position: relative;
