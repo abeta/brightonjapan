@@ -8,6 +8,7 @@ layout: default
     {{ content }}
   </div>
 </div>
+{% capture title %}Events at {{ page.title }}{% endcapture %}
 {% if site.events | where area == page.slug %}
-{% include module module="events" category="events" area=page.slug parent="" %} 
+{% include module module="events" title=title category="events" area=page.slug parent="" %} 
 {% endif %}
