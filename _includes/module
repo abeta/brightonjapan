@@ -1,9 +1,9 @@
+{% capture module %}modules/{{ include.module }}.html{% endcapture %}
 {% if include.style == 'raw' %}{% include {{module}} params=include %}
 {% else %}
   <section class="section {{ include.class }}" id="{{ include.module }}">
     <div class="container">
     {% if include.title %}<h2 class="page-header">{{ include.title }}</h2>{% endif %}
-    {% capture module %}modules/{{ include.module }}.html{% endcapture %}
     {% include {{module}} params=include %}
     </div>
   </section>
