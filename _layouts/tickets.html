@@ -8,9 +8,13 @@ layout: default
     {{ content }}
     <hr>
     {% for item in site.events %}{% if item.ticket %}
-    {{ item.title }}
+    
+    <div class="red bg-pattern-2">
+      <h3>{{ item.title }}</h3>
     {{ item.price }}
-    {{ item.ticket }}
+    <a class="btn btn-danger btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
+    </div>
+    
     {% endif %}{% endfor %}
   </div>
 </div>
