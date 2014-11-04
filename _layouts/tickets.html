@@ -9,10 +9,9 @@ layout: default
     <hr>
     {% for item in site.events %}{% if item.ticket %}
     
-    <div class="red bg-pattern-2">
-      <h3>{{ item.title }}</h3>
-    {{ item.price }}
-    <a class="btn btn-danger btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
+    <div class="box red bg-pattern-2">
+      <a class="btn btn-primary btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
+      <h3>{{ item.title }} <small>{{ item.price }}</small></h3>
     </div>
     
     {% endif %}{% endfor %}
