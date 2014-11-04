@@ -5,7 +5,7 @@
       <div class="thumb-wide img" style="background-image: url(http://cdn.abemedia.co.uk/432x243{{site.baseurl}}{{ item.image }})"></div>
     </figure>
     <h3>{{ item.title }}</h3>
-    {% if item.start_date %}<p>{{ item.start_date | date: '%d %m %Y' }}{% if item.end_date %} - {{ item.end_date | date: '%d %m %Y' }}{% endif %}</p>{% endif %}
+    {% if item.start_date %}<p>{{ item.start_date | date_to_string }}{% if item.end_date %} - {{ item.end_date | date_to_string }}{% endif %}</p>{% endif %}
     <p>{{ item.content | strip_html | truncatewords:20 }}</p>
     </a><br></div>{% endif %}{% endif %}{% endfor %}
   </div>
