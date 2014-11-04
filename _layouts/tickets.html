@@ -14,8 +14,11 @@ layout: default
       {% for item in site.events %}{% if item.ticket %}
       <div class="col-md-6">
         <div class="box red bg-pattern-2">
-          <a class="btn btn-warning btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
-          <h3 class="media-heading">{{ item.title }} <small>&pound;{{ item.price }}</small></h3>
+          <div class="btn-group pull-right btn-lg">
+            <span class="btn btn-warning btn-lg pull-right">&pound;{{ item.price }}</span>
+            <a class="btn btn-warning" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
+          </div>
+          <h3 class="media-heading">{{ item.title }}</h3>
           <span>{{ item.start_date | date: '%A, %d %B %Y' }}</span>
         </div>
       </div>
