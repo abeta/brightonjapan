@@ -234,7 +234,7 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
-.thumb a{
+.thumb {
     color: #333;
 }
 .thumb figure {
