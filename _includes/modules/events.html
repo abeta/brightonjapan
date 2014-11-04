@@ -1,10 +1,10 @@
-  <ul class="box-list box-list-md">
+  <div class="row">
     {% for item in site[include.params.category] %}{% if item.parent == include.params.parent %}{% if include.params.area == nil or item.area == include.params.area %}
-    <li><a href="{{site.baseurl}}{{ item.url }}" >
+    <div class="col-sm-6 col-md-4"><a href="{{site.baseurl}}{{ item.url }}" >
     <figure>
       <div class="thumb-wide img" style="background-image: url(http://cdn.abemedia.co.uk/432x243{{site.baseurl}}{{ item.image }})"></div>
     </figure>
     <h3>{{ item.title }}</h3>
     <p>{{ item.content | strip_html | truncatewords:20 }}</p>
-    </a>{% endif %}{% endif %}{% endfor %}
-  </ul>
+    </a></div>{% endif %}{% endif %}{% endfor %}
+  </div>
