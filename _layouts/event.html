@@ -9,7 +9,6 @@ layout: default
     {{ content }}
   </div>
 </div>
-{{page.collection}}
-{% if site[page.collection] | where "parent" == page.slug %}
+{% if site[page.collection] | where parent == page.slug %}
 {% include module module="events" category="events" parent=page.slug %} 
 {% endif %}
