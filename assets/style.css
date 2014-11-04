@@ -473,4 +473,5 @@ a.thumb, a.thumb:hover {
 #tickets .input-group-addon {
     border-radius: 0;
     color:#333;
+    font-size:1.5em;
 }
