@@ -13,7 +13,7 @@ layout: default
     {% for item in site.events %}{% if item.ticket %}
     <div class="box red bg-pattern-2">
       <a class="btn btn-primary btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
-      <h3>{{ item.title }} <small>{{ item.price }}</small></h3>
+      <h3>{{ item.title }} <small>&pound;{{ item.price }}</small></h3>
     </div>
     <br>
     {% endif %}{% endfor %}
