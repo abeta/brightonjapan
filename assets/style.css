@@ -237,6 +237,9 @@ a.box-red:hover {
 .row>div {
     padding-bottom: 30px;
 }
+.row>.form-group {
+    padding-bottom: 0;
+}
 a.thumb, a.thumb:hover {
     color: #333;
     text-decoration:none;
