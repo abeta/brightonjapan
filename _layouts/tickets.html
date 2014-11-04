@@ -6,7 +6,7 @@ layout: default
 <div class="section" id="tickets">
   <div class="container">
     {{ content }}
-    
+    <hr>
     <div class="row">
       {% for item in site.events %}{% if item.ticket %}
       <div class="col-md-6">
@@ -24,9 +24,4 @@ layout: default
       {% endif %}{% endfor %}
     </div>
   </div>
-</div>
-
-<div class="input-group">
-  <span class="input-group-addon">@</span>
-  <input type="text" class="form-control" placeholder="Username">
 </div>
