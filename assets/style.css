@@ -234,9 +234,18 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
-a.thumb, a.thumb:hover p {
+a.thumb, a.thumb:hover {
     color: #333;
     text-decoration:none;
+}
+.thumb h3 {
+    float:left;
+}
+.thumb:hover h3 {
+    border-bottom: 2px solid #c00;
+}
+.thumb p {
+    clear: both;
 }
 .thumb figure {
     position: relative;
