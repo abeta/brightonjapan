@@ -6,7 +6,7 @@ layout: default
 <div class="section" id="content">
   <div class="container">
     {{ content }}
+    {% include module module="events" style="raw" category=page.slug %} 
   </div>
 </div>
 
-{% include module module="events" class="grey" category=page.slug %} 
