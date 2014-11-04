@@ -234,13 +234,16 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
-a figure {
+.thumb a{
+    color: #333;
+}
+.thumb figure {
     position: relative;
     overflow: hidden;
     margin: 0;
     background: #fff;
 }
-a:hover figure::before{
+.thumb:hover figure::before{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -252,14 +255,14 @@ a:hover figure::before{
     content: "";
     border-radius: 50%;
 }
-a figure * {
+.thumb figure * {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-a:hover figure img, a:hover figure .img {
+.thumb:hover figure img, .thumb:hover figure .img {
     -moz-transform: scale(1.2) rotate(-3deg);
     -webkit-transform: scale(1.2) rotate(-3deg);
     -o-transform: scale(1.2) rotate(-3deg);
@@ -268,12 +271,12 @@ a:hover figure img, a:hover figure .img {
     filter: alpha(opacity=50);
     opacity: .5;
 }
-a figure>.label {
+.thumb figure>.label {
     position:absolute;
     right: 10px;
     bottom: 10px;
 }
-a figure>figcaption {
+.thumb figure>figcaption {
     position: absolute;
     background: rgba(0,0,0,0.75);
     color: white;
@@ -289,7 +292,7 @@ a figure>figcaption {
     -ms-transition: all 0.6s ease;
     transition: all 0.6s ease;
 }
-a:hover figure>figcaption {
+.thumb:hover figure>figcaption {
     filter: alpha(opacity=100);
     opacity: 1;
     bottom: 0;
