@@ -467,7 +467,10 @@ a.thumb, a.thumb:hover {
 .bg-pattern-2 {
     background-image:url(pattern_2.png);
 }
-.input-group-addon {
+#tickets .input-group {
+    width: 200px;
+}
+#tickets .input-group-addon {
     border-radius: 0;
     color:#333;
 }
