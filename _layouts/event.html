@@ -7,9 +7,9 @@ layout: default
   <div class="container">
     {% include system/sharing %} 
     {{ content }}
-    <br>
-    {% if site[page.collection] | where parent == page.slug %}
-      {% include module module="events" style="raw" category=page.collection parent=page.slug %} 
-    {% endif %}
   </div>
 </div>
+{% if site[page.collection] | where parent == page.slug %}
+  {% capture title %}Events at {{ page.title }}{% endcapture %}
+  {% include module module="events" class="black" title=title category=page.collection parent=page.slug %} 
+{% endif %}
