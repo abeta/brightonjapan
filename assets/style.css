@@ -376,7 +376,7 @@ a.thumb, a.thumb:hover {
 .black {
     background-color: #161616;
 }
-.black, .red, .black *, .red * {
+.black, .red, .black *, .red *, .box * {
     color: #fff;
 }
 .rel {
