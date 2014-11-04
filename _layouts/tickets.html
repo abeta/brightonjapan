@@ -17,7 +17,7 @@ layout: default
               <a class="btn btn-info btn-lg" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
             </div>
           </div>
-          <h3 class="media-heading">{{ item.title }}</h3>
+          <a class="h3" href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
           <span>{{ item.start_date | date: '%A, %d %B %Y' }}</span>
         </div>
       </div>
