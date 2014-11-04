@@ -8,11 +8,7 @@ layout: default
     {{ content }}
   </div>
 </div>
+{{page.collection}}
 {% if site[page.collection] | where parent == page.slug %}
-<div class="grey section">
-  <div class="container">
-    <h2 class="page-header">{{ page.title }}</h2> 
-    {% include module type="events" category="events" parent=page.slug %} 
-  </div>
-</div>
+{% include module module="events" category="events" parent=page.slug %} 
 {% endif %}
