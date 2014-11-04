@@ -234,6 +234,10 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
+.input-group-addon {
+    border-radius: 0;
+    color:#333;
+}
 .row>div {
     padding-bottom: 30px;
 }
