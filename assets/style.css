@@ -234,6 +234,9 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
+.row>div {
+    padding-bottom: 30px;
+}
 a.thumb, a.thumb:hover {
     color: #333;
     text-decoration:none;
