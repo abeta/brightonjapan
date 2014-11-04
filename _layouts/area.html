@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% include modules/banner.html %}
+
+<div class="section" id="content">
+  <div class="container">
+    {{ content }}
+  </div>
+</div>
+{% if site.events | where area == page.slug %}
+{% include module module="events" category="events" area=page.slug %} 
+{% endif %}
