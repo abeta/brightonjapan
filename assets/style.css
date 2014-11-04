@@ -243,7 +243,7 @@ a.thumb, a.thumb:hover {
 }
 .thumb:hover h3 {
     border-bottom: 3px solid #c00;
-    margin-bottom: -3px;
+    margin-bottom: 7px;
 }
 .thumb p {
     clear: both;
