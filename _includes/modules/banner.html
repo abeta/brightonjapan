@@ -4,8 +4,7 @@
         {% if page.start_date %}
           <div class="box box-white h3">{{ page.start_date | date: '%A, %d %B' }}</div>
           <div class="box box-white h3">
-            {{ page.start_date | date: '%I' }}
-            {% if page.start_date | date: '%M' != '00' %}{{ page.start_date | date: ':%M' }}{% endif %}
+            {{ page.start_date | date: '%I' }}{% if page.start_date | date: '%M' != '00' %}{{ page.start_date | date: ':%M' }}{% endif %}
             {{ page.start_date | date: '%p' }}
           </div>
         {% endif %}
