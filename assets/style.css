@@ -234,13 +234,13 @@ a.box-red:hover {
 .box-list>li a{
     color: #333;
 }
-.box-list>li figure {
+a figure {
     position: relative;
     overflow: hidden;
     margin: 0;
     background: #fff;
 }
-.box-list>li:hover figure::before{
+a:hover figure::before{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -252,14 +252,14 @@ a.box-red:hover {
     content: "";
     border-radius: 50%;
 }
-.box-list>li figure * {
+a figure * {
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-.box-list>li:hover figure img, .box-list>li:hover figure .img {
+a:hover figure img, a:hover figure .img {
     -moz-transform: scale(1.2) rotate(-3deg);
     -webkit-transform: scale(1.2) rotate(-3deg);
     -o-transform: scale(1.2) rotate(-3deg);
@@ -268,12 +268,12 @@ a.box-red:hover {
     filter: alpha(opacity=50);
     opacity: .5;
 }
-.box-list>li figure>.label {
+a figure>.label {
     position:absolute;
     right: 10px;
     bottom: 10px;
 }
-.box-list>li figure>figcaption {
+a figure>figcaption {
     position: absolute;
     background: rgba(0,0,0,0.75);
     color: white;
@@ -289,7 +289,7 @@ a.box-red:hover {
     -ms-transition: all 0.6s ease;
     transition: all 0.6s ease;
 }
-.box-list>li figure:hover>figcaption {
+a:hover figure>figcaption {
     filter: alpha(opacity=100);
     opacity: 1;
     bottom: 0;
