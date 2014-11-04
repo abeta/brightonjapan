@@ -6,10 +6,7 @@ layout: default
 <div class="section" id="content">
   <div class="container">
     {{ content }}
-  </div>
-</div>
-<div class="section black" id="tickets">
-  <div class="container">
+    
     <div class="row">
       {% for item in site.events %}{% if item.ticket %}
       <div class="col-md-6">
