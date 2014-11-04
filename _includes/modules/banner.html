@@ -1,5 +1,4 @@
-  {% if page.image %}
-  <div class="banner" style="background-image: url(http://cdn.abemedia.co.uk/1280x400{{site.baseurl}}{{ page.image }})">
+  <div class="banner" {% if page.image %}style="background-image: url(http://cdn.abemedia.co.uk/1280x400{{site.baseurl}}{{ page.image }})"{% endif %}>
     <div class="container">
       <div class="banner-text">
         {% if page.start_date %}<div class="box box-white h3">{{ page.start_date | date: '%A, %d %B %Y' }}</div>{% endif %}
@@ -7,4 +6,4 @@
       </div>
     </div>
   </div>
-  {% endif %}
+  

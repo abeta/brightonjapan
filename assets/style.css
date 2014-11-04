@@ -143,6 +143,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     background-size: cover;
     background-position: center;
     position: relative;
+    background-image: url(../images/banner.jpg);
 }
 .item>.banner {
     position: absolute;
