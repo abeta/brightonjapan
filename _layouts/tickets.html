@@ -16,7 +16,7 @@ layout: default
         <div class="box red bg-pattern-2">
           <a class="btn btn-warning btn-lg pull-right" href="{{ item.ticket }}" target="_blank">Buy Tickets</a>
           <h3 class="media-heading">{{ item.title }} <small>&pound;{{ item.price }}</small></h3>
-          <p>{{ item.start_date | date: '%A, %d %B %Y' }}</p>
+          <span>{{ item.start_date | date: '%A, %d %B %Y' }}</span>
         </div>
       </div>
       {% endif %}{% endfor %}
