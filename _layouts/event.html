@@ -30,7 +30,8 @@ layout: default
     {{ content }}
   </div>
 </div>
-{% if site[page.collection] | where parent == page.slug %}
+{% assign items = site[page.collection] | where parent == page.slug %}
+{% if items %}
   {% capture title %}Events at {{ page.title }}{% endcapture %}
   {% include module module="events" class="black" title=title category=page.collection parent=page.slug %} 
 {% endif %}
