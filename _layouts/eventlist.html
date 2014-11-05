@@ -14,7 +14,7 @@ layout: default
           <h3 class="media-heading">{{ area.title }}</h3>
           <hr>
           <ul class="media-list">
-            {% for event in site.events %}{% if event.area == area.slug and event.parent == '' %}
+            {% for event in site.events %}{% if event.area == area.slug and event.parent == nil %}
             <li class="media"><a href="{{ site.baseurl }}{{ event.url }}">
               <div class="media-left">
                 <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
