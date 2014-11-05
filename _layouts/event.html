@@ -30,7 +30,7 @@ layout: default
     {{ content }}
   </div>
 </div>
-{% assign items = (site[page.collection] | where parent == page.slug | sort 'start_date') %}
+{% assign items = (site[page.collection] | where 'parent', page.slug | sort 'start_date') %}
 {% if items != nil %}
   {% capture title %}Events at {{ page.title }}{% endcapture %}
   {% include module module="gallery" class="black" title=title items=items %} 
