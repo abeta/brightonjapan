@@ -157,7 +157,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .banner .banner-text.right {
     position:absolute;
-    top: 100px;
+    top: 120px;
     right: 0;
 }
 .banner .banner-text .box{
