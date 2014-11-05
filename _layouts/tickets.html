@@ -8,8 +8,8 @@ layout: default
     {{ content }}
     <br>
     <div class="row">
-      {% assign items = site.events | where: 'ticket', !nil | sort: 'start_date' %}
-      {% for item in items %}
+      {% assign items = site.events | sort: 'start_date' %}
+      {% for item in items %}{% if item.price %}
       <div class="col-md-6">
         <div class="box bg-pattern-2">
           <div class="pull-right">
@@ -22,7 +22,7 @@ layout: default
           <span>{{ item.start_date | date: '%A, %d %B %Y' }}</span>
         </div>
       </div>
-      {% endfor %}
+      {% endif %}{% endfor %}
     </div>
   </div>
 </div>
