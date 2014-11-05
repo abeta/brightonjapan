@@ -4,17 +4,17 @@ layout: default
   <div class="banner" {% if page.image %}style="background-image: url(http://cdn.abemedia.co.uk/1280x400{{site.baseurl}}{{ page.image }})"{% endif %}>
     <div class="container">
       <div class="banner-text">
-          <div class="box box-white h3">{{ page.start_date | date: '%A, %d %B' }}</div>
-          <div class="box box-white h3">
-            {% capture minutes %}{{ page.start_date | date: '%M' }}{% endcapture %}
-            {{ page.start_date | date: '%I' }}{% unless minutes == '00' %}:{{ minutes }}{% endunless %}
-            {{ page.start_date | date: '%p' }}
-          </div>
+        <div class="box box-white h3">{{ page.start_date | date: '%A, %d %B' }}</div>
+        <div class="box box-white h3">
+          {% capture minutes %}{{ page.start_date | date: '%M' }}{% endcapture %}
+          {{ page.start_date | date: '%I' }}{% unless minutes == '00' %}:{{ minutes }}{% endunless %}
+          {{ page.start_date | date: '%p' }}
+        </div>
+        <h1 class="box">{{ page.title }}</h1>
       </div>
       <div class="banner-text right">
         <div class="box box-red h3">{% if page.price %}{{ page.price }}{% else %}Free{% endif %}</div>
         {% if page.ticket %}<a href="{{ page.ticket }}" class="box box-red h3">Buy Tickets</a>{% endif %}
-        <h1 class="box">{{ page.title }}</h1>
       </div>
     </div>
   </div>
