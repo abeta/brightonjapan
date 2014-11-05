@@ -20,4 +20,5 @@ layout: default
   {% assign events = (site.events | where: 'parent', nil | sort: 'start_date') %}
   {% include module module="gallery" class="grey" title="Events" items=events %} 
   {% include module module="gallery" class="red bg-pattern-1" title="Areas" items=site.areas %}
-  {% include module module="sponsors" title="Sponsors" category="sponsors" %}
+  {% assign sponsors = (site.sponsors | sort: 'order') %}
+  {% include module module="sponsors" title="Sponsors" items=sponsors %}
