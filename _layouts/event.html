@@ -32,7 +32,7 @@ layout: default
 </div>
 {% assign items = (site[page.collection] | where: 'parent', page.slug | sort 'start_date') %}
 {{ items | jsonify }}
-{% if items != nil %}
+{% if items %}
   {% capture title %}Events at {{ page.title }}{% endcapture %}
   {% include module module="gallery" class="black" title=title items=items %} 
 {% endif %}
