@@ -5,7 +5,7 @@
           <div class="box box-white h3">{{ page.start_date | date: '%A, %d %B' }}</div>
           <div class="box box-white h3">
             {% capture minutes %}{{ page.start_date | date: '%M' }}{% endcapture %}
-            {{ page.start_date | date: '%I' }}{% unless minutes %}:{% unless minutes %}{% endunless %}
+            {{ page.start_date | date: '%I' }}{% unless minutes == '00' %}:{% unless minutes %}{% endunless %}
             {{ page.start_date | date: '%p' }}
           </div>
         {% endif %}
