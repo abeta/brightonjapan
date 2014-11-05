@@ -31,6 +31,7 @@ layout: default
   </div>
 </div>
 {% assign items = site[page.collection] | where 'parent', page.slug %}
+{% items | jsonify %}
 {% if items %}
   {% capture title %}Events at {{ page.title }}{% endcapture %}
   {% include module module="events" class="black" title=title category=page.collection parent=page.slug %} 
