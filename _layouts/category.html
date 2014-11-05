@@ -8,7 +8,7 @@ layout: default
     {{ content }}
     <br>
     {% assign items = (site[page.slug] | where: 'parent', nil | sort: 'start_date') %}
-    {% include module module="gallery" items=items %} 
+    {% include module module="gallery" items=items style="raw" %} 
   </div>
 </div>
 
