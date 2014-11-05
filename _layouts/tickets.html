@@ -8,7 +8,7 @@ layout: default
     {{ content }}
     <br>
     <div class="row">
-      {% assign items = site.events | where: 'ticket' | sort: 'start_date' %}
+      {% assign items = site.events | where: 'ticket', !nil | sort: 'start_date' %}
       {% for item in items %}
       <div class="col-md-6">
         <div class="box bg-pattern-2">
