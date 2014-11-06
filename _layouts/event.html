@@ -7,7 +7,7 @@ layout: default
         <div class="box box-white h3">{{ page.start_date | date: '%A, %d %B' }}</div>
         <div class="box box-white h3">
           {% capture minutes %}{{ page.start_date | date: '%M' }}{% endcapture %}
-          {{ page.start_date | date: '%H' }}{% unless minutes == '00' %}:{{ minutes }}{% endunless %}
+          {{ page.start_date | date: '%h' }}{% unless minutes == '00' %}:{{ minutes }}{% endunless %}
           {{ page.start_date | date: '%p' }}
         </div>
         <h1 class="box">{{ page.title }}</h1>
