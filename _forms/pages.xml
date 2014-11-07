@@ -2,7 +2,7 @@
 <form>
     <fields>
         <fieldset name="options">
-            <field name="japanese" type="text" label="Japanese Title" filter="string" class="form-control" />
+            <field name="japanese" type="text" label="Japanese Title" class="form-control" />
         </fieldset>
     </fields>
 </form>
