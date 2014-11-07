@@ -61,6 +61,5 @@ collections:
     sponsors:
         title: Sponsors
         icon: 'money'
-        output: true
         fields: "sponsor-fields.xml"
     
