@@ -20,8 +20,10 @@ profiles:
     provider:
         - facebook
         - twitter
+        - pinterest
     facebook: https://facebook.com/brightonjapanfestival
     twitter: https://twitter.com/brightonjapan15
+    pinterest: https://pinterest.com/brightonjapan
 defaults:
   - 
     scope:
