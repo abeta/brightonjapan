@@ -3,7 +3,6 @@
     <fields>
         <fieldset name="options">
             <field name="japanese" type="text" label="Japanese Title" filter="string" class="form-control" />
-            <field name="image" type="media" label="Banner Image" filter="string" class="form-control" />
         </fieldset>
     </fields>
 </form>
