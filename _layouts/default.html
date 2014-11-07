@@ -40,7 +40,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
         
-        {% assign pages = (site.content | where: 'parent', nil | sort: 'order') %}
+        {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
         {% for item in pages %}
           <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
             {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}{% endif %}
