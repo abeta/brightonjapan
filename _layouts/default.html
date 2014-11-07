@@ -56,11 +56,11 @@
   </div>
   {{content}}
   
-  <footer class="bg-pattern-2">
+  <footer>
     <div class="container">
       <ul class="nav navbar-nav navbar-right" style="margin: -15px 0">
         {% for provider in site.profiles.provider %}
-        <li class="visible-lg"><a href="{{ site.profiles[provider] }}" target="_blank"><i class="fa fa-fw fa-3x fa-{{ provider }}"></i></a>
+        <li class="visible-lg nav-{{ provider }}"><a href="{{ site.profiles[provider] }}" target="_blank"><i class="fa fa-fw fa-3x fa-{{ provider }}"></i></a>
         {% endfor %}
       </ul>
       <p class="text-left">© 2014 {{ site.title }} • Web design by ABE Media <!--a href="/sitemap">Sitemap</a--></p>
