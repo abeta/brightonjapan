@@ -48,18 +48,22 @@ defaults:
     values:
         layout: "event"
 collections:
+    pages:
+        title: Pages
+        icon: sitemap
+        output: true
     events:
         title: Events
         icon: calendar
         output: true
-        fields: "event-fields.xml"
     areas:
         title: Areas
         icon: 'map-marker'
         output: true
-        fields: "area-fields.xml"
     sponsors:
         title: Sponsors
         icon: 'money'
-        fields: "sponsor-fields.xml"
+    contacts:
+        title: Contacts
+        icon: 'users'
     
