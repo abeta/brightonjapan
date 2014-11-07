@@ -3,19 +3,20 @@ layout: default
 ---
 {% include modules/banner.html %}
 
+{% assign areas = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | group_by: 'area') %}
+
 <div class="section" id="content">
   <div class="container">
     {{ content }}
     <br><br>
     <div class="row">
-      {% for area in site.areas %}
+      {% for area in areas %}
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
           <h3 class="media-heading">{{ area.title }}</h3>
           <hr>
           <ul class="media-list">
-            {% assign events = (site.events | where: 'parent', nil | where: 'area', page.slug | where: 'published', 1 | sort: 'start_date') %}
-            {% for event in events %}
+            {% for event in area.items %}
             <li class="media"><a href="{{ site.baseurl }}{{ event.url }}">
               <div class="media-left">
                 <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
