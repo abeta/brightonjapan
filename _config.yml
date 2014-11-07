@@ -52,6 +52,7 @@ collections:
         title: Pages
         icon: sitemap
         output: true
+        permalink: /:path/
     posts:
         title: Blog
         icon: files
