@@ -14,7 +14,7 @@ layout: default
     <div class="container">
       <a href="{{ site.baseurl }}tickets.html" class="btn btn-danger btn-lg pull-right">Buy Tickets</a>
       <div class="datebox pull-right" id="countdown" data-date="9-14-2015 00:00:00"></div>
-      <p class="h3" style="font-size: 40px;margin: 0;">14th - 20th September, 2015</p>
+      <span class="text-lg">14th - 20th September, 2015</span>
     </div>
   </div>
   {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date') %}
