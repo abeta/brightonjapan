@@ -132,11 +132,13 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 
 body>footer {
-    padding-top: 40px;
-    padding-bottom: 30px;
     color: #fff;
     border-top: 1px solid #eee;
     background: #333;
+}
+
+body>footer .footer-left {
+    padding: 40px 0 30px;
 }
 body>footer a {
     color: #fff;
