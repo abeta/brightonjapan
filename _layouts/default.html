@@ -39,9 +39,8 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
         
-        {% assign pages = site.pages | where: 'parent', nil | sort: 'order' %}
+        {% assign pages = (site.pages | where: 'parent', nil | sort: 'order') %}
         {% for item in pages %}
-          {% capture slug %}{{ item[1].slug }}{% endcapture %}
           <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
             {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item.slug }}.html">{{ item.title }}{% endif %}
               <small>{{ item.japanese }}</small>
