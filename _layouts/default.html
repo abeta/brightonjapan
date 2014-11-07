@@ -41,9 +41,9 @@
         
         {% assign pages = (site.pages | where: 'parent', nil | sort: 'order') %}
         {{ pages | jsonify }}
-        {% for item in pages %}
+        {% for item in site.pages %}
           <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
-            {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item.slug }}.html">{{ item.title }}{% endif %}
+            {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}{% endif %}
               <small>{{ item.japanese }}</small>
             </a>
           </li>
