@@ -48,7 +48,7 @@ defaults:
     values:
         layout: "event"
 collections:
-    pages:
+    content:
         title: Pages
         icon: sitemap
         output: true
