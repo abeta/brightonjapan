@@ -221,35 +221,6 @@ body>footer a {
     background-repeat: no-repeat;
 }
 
-.box {
-    background: rgba(0,0,0,0.75);
-    padding: 15px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #fff;
-    margin: 0;
-}
-.box-white {
-    background: rgba(255,255,255,0.75);
-}
-.box-white, .box-white * {
-    color: #000;
-}
-.box-red:hover {
-    background: rgba(255,0,0,0.75);
-}
-a.box {
-    display: inline-block;
-}
-a.box:hover, .box-red {
-    background: rgba(255,0,0,0.75);
-    color: #fff;
-    text-decoration:none;
-}
-a.box-red:hover {
-    background: rgba(255,0,0,0.9);
-}
-
 .box-list {
     list-style: none;
     padding: 0;
@@ -416,7 +387,34 @@ a.thumb, a.thumb:hover {
 .rel {
     position: relative;
 }
-
+.box {
+    background: rgba(0,0,0,0.75);
+    padding: 15px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+}
+.box-white {
+    background: rgba(255,255,255,0.75);
+}
+.box-white, .box-white * {
+    color: #000;
+}
+.box-red:hover {
+    background: rgba(255,0,0,0.75);
+}
+a.box {
+    display: inline-block;
+}
+a.box:hover, .box-red {
+    background: rgba(255,0,0,0.75);
+    color: #fff;
+    text-decoration:none;
+}
+a.box-red:hover {
+    background: rgba(255,0,0,0.9);
+}
 .carousel .box {
     max-width:400px;
     margin: 0 0 5px;
