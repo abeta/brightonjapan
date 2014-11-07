@@ -52,18 +52,22 @@ collections:
         title: Pages
         icon: sitemap
         output: true
+    posts:
+        title: Blog
+        icon: files
+        output: true
     events:
         title: Events
         icon: calendar
         output: true
     areas:
         title: Areas
-        icon: 'map-marker'
+        icon: map-marker
         output: true
     sponsors:
         title: Sponsors
-        icon: 'money'
+        icon: money
     contacts:
         title: Contacts
-        icon: 'users'
+        icon: users
     
