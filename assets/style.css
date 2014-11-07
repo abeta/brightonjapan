@@ -231,6 +231,8 @@ body>footer a {
 }
 .box-white {
     background: rgba(255,255,255,0.75);
+}
+.box-white, .box-white * {
     color: #000;
 }
 .box-red:hover {
