@@ -9,9 +9,10 @@
     <link rel="icon" href="{{ site.baseurl }}favicon.ico" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | remove:'index.html' }}"/>
     <title>{{ page.title }} | {{ site.title }}</title>
-    <!--link href="http://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'>
     <link href="{{site.baseurl}}/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" /-->
+    <link href="{{site.baseurl}}/lib/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
     <link href="{{site.baseurl}}/assets/style.css" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{site.baseurl}}/assets/ie10-viewport-bug-workaround.js"></script>
@@ -59,7 +60,7 @@
     <div class="container">
       <ul class="nav navbar-nav navbar-right">
         {% for provider in site.profiles.provider %}
-        <li class="visible-lg"><a href="site.profiles[provider]" target="_blank"><i class="fa fa-fw fa-{{ provider }}"></i></a>
+        <li class="visible-lg"><a href="site.profiles[provider]" target="_blank"><i class="fa fa-{{ provider }}"></i></a>
         {% endfor %}
       </ul>
       <p class="text-left">© 2014 {{ site.title }} • Web design by ABE Media <!--a href="/sitemap">Sitemap</a--></p>
