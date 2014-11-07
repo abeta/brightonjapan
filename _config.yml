@@ -53,10 +53,6 @@ collections:
         icon: sitemap
         output: true
         permalink: /:path.html
-    posts:
-        title: Blog
-        icon: files
-        output: true
     events:
         title: Events
         icon: calendar
