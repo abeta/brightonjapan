@@ -20,8 +20,8 @@ profiles:
     provider:
         - facebook
         - twitter
-    facebook: brightonjapanfestival
-    twitter: brightonjapan15
+    facebook: https://facebook.com/brightonjapanfestival
+    twitter: https://twitter.com/brightonjapan15
 defaults:
   - 
     scope:
