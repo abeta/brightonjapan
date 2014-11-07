@@ -4,8 +4,8 @@ layout: default
   <div class="banner" {% if page.image %}style="background-image: url(http://cdn.abemedia.co.uk/1280x400{{site.baseurl}}{{ page.image }})"{% endif %}>
     <div class="container rel fh">
       <div class="banner-text">
-        <div class="box box-white h3"><i class="fa fa-calendar"></i> {{ page.start_date | date: '%A, %d %B' }}</div>
-        <div class="box box-white h3"><i class="fa fa-clock-o"></i>
+        <div class="box box-white h3"><i class="fa fa-calendar fa-fw"></i> {{ page.start_date | date: '%A, %d %B' }}</div>
+        <div class="box box-white h3"><i class="fa fa-clock-o fa-fw"></i>
           {% capture minutes %}{{ page.start_date | date: '%M' }}{% endcapture %}
           {{ page.start_date | date: '%-I' }}{% unless minutes == '00' %}:{{ minutes }}{% endunless %}
           {{ page.start_date | date: '%p' }}
@@ -15,7 +15,7 @@ layout: default
       <div class="banner-text right">
         {% if page.price %}
           <div class="box box-white h3">&pound;{{ page.price }}</div>
-          {% if page.ticket %}<a target="_blank" href="{{ page.ticket }}" class="box box-red h3"><i class="fa fa-shopping-cart"></i>  Buy Tickets</a>{% endif %}
+          {% if page.ticket %}<a target="_blank" href="{{ page.ticket }}" class="box box-red h3"><i class="fa fa-shopping-cart fa-fw"></i> Buy Tickets</a>{% endif %}
         {% else %}
           <div class="box box-red h3 circle">Free</div>
         {% endif %}
