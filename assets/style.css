@@ -19,13 +19,6 @@ h2, .h2 {
 .page-header {
     margin-top:0;
 }
-body>footer {
-    padding-top: 40px;
-    padding-bottom: 30px;
-    color: #fff;
-    border-top: 1px solid #eee;
-    background: #333;
-}
 a {
     color: #900;
 }
@@ -136,6 +129,17 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     .navbar-inverse {
         font-size: 20px;
     }
+}
+
+body>footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color: #fff;
+    border-top: 1px solid #eee;
+    background: #333;
+}
+body>footer a {
+    color: #fff;
 }
 
 .banner {
