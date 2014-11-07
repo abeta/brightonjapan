@@ -16,6 +16,7 @@ layout: default
           <hr>
           <ul class="media-list">
             {% for event in events[{{ area.slug }}].items %}
+    {{ event }}
             <li class="media"><a href="{{ site.baseurl }}{{ event.url }}">
               <div class="media-left">
                 <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
