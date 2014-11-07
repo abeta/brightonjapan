@@ -3,7 +3,6 @@
     <fields>
         <fieldset name="options">
             <field name="name" type="text" label="Name" filter="string" class="form-control" />
-            <field name="position" type="text" label="Position" filter="string" class="form-control" />
             <field name="email" type="email" label="Email" filter="string" class="form-control" />
             <field name="phone" type="phone" label="Phone" filter="string" class="form-control" />
             <field name="mobile" type="phone" label="Mobile" filter="string" class="form-control" />
