@@ -17,9 +17,11 @@ layout: default
       <p class="h3" style="font-size: 40px;margin: 0;">14th - 20th September, 2015</p>
     </div>
   </div>
-  {% assign events = (site.events | where: 'parent', nil | sort: 'start_date') %}
+  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date') %}
   {% include module module="gallery" class="grey" title="Events" items=events %} 
-  {% assign areas = (site.areas | sort: 'order') %}
+  
+  {% assign areas = (site.areas | where: 'published', 1 | sort: 'order') %}
   {% include module module="gallery" class="red bg-pattern-1" title="Areas" items=areas %}
-  {% assign sponsors = (site.sponsors | sort: 'order') %}
+  
+  {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}

@@ -8,7 +8,7 @@ layout: default
     {{ content }}
   </div>
 </div>
-{% assign items = (site.events | where: 'area', page.slug | where: 'parent', nil | sort: 'start_date') %}
+{% assign items = (site.events | where: 'area', page.slug | where: 'parent', nil | where: 'published', 1 | sort: 'start_date') %}
 {% assign count = (items | size) %}
 {% if count > 0 %}
   {% capture title %}Events at {{ page.title }}{% endcapture %}

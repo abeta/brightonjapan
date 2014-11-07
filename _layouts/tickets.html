@@ -8,7 +8,7 @@ layout: default
     {{ content }}
     <br>
     <div class="row">
-      {% assign items = site.events | sort: 'start_date' %}
+      {% assign items = site.events | where: 'published', 1 | sort: 'start_date' %}
       {% for item in items %}{% if item.price %}
       <div class="col-md-6">
         <div class="box bg-pattern-2">
