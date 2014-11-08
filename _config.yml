@@ -1,5 +1,6 @@
 title: 'Brighton Japan Festival'
 permalink: none
+baseurl: /
 timezone: Europe/London
 analytics:
     provider: google_analytics
