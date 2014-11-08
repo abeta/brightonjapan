@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ `TZ=GMT date +%H` == "05" ]
+then
+    cd $OPENSHIFT_REPO_DIR
+    jekyll build
+    TZ=AEST date >> ${OPENSHIFT_DATA_DIR}/buildsite.log
+fi
