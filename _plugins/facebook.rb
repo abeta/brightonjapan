@@ -13,7 +13,7 @@ module Jekyll
       self.data['title'] = item['title']
       self.data['image'] = item['image']
       self.data['items'] = item['items']
-      self.data['category'] = item['gallery']
+      self.data['category'] = 'gallery'
     end
   end
   
