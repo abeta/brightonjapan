@@ -8,13 +8,5 @@ japanese: ギャラリー
 modified: '2014-11-07T02:21:09+00:00'
 ---
 {% assign photos = (site.pages | where: 'category', 'gallery') %}
-<div class="row">
-  {% for item in photos %}
-  <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.url }}" >
-    <figure>
-      <div class="thumb-wide img" style="background-image: url({{ item.image }})"></div>
-    </figure>
-    <h3>{{ item.title }}</h3>
-  </a><br></div>
-  {% endfor %}
-</div>
+{% include module module="gallery" items=photos title=page.title %} 
+
