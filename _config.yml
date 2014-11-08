@@ -5,8 +5,6 @@ baseurl: /
 relative_permalinks: false
 analytics:
     provider: google_analytics
-comments:
-    provider: '1'
 sharing:
     provider:
         - facebook
