@@ -1,1 +1,1 @@
-Brighton Japan Festival
+Brighton Japan Festival 2015
