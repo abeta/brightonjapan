@@ -34,7 +34,7 @@
           <span class="icon-bar"></span>
         </button> 
          <a class="navbar-brand brand-small" href="{{site.baseurl}}">
-          <img src="{{site.baseurl}}/assets/logo_small.png" alt="{{ site.title }}" id="logo" />
+          <img src="{{site.baseurl}}assets/logo_small.png" alt="{{ site.title }}" id="logo" />
         </a>
       </div>
       <div class="collapse navbar-collapse">
@@ -43,7 +43,7 @@
         {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
         {% for item in pages %}
           <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
-            {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{site.baseurl}}{{ item.url }}">{{ item.title }}{% endif %}
+            {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{ item.url }}">{{ item.title }}{% endif %}
               <small>{{ item.japanese }}</small>
             </a>
           </li>
