@@ -4,15 +4,16 @@ module Jekyll
       @site = site
       @base = base
       @dir = dir
-      @name = item['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '') + '.html' || 'index.html'
+      @name = 'index.html'
 
       self.process(@name)
       
       self.read_yaml(File.join(base, '_layouts'), 'gallery.html')
       
       self.data['title'] = item['title']
+      self.data['image'] = item['image']
       self.data['items'] = item['items']
-      self.data['category'] = item['id']
+      self.data['category'] = item['gallery']
     end
   end
   

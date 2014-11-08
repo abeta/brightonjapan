@@ -1,17 +1,14 @@
 ---
+layout: page
 ---
-<div class="section" id="content">
-  <div class="container">
-    <h1>{{ page.title }}</h1>
-    <div class="row">
-      {% for item in page.items %}
-      <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item }}" >
-        <figure>
-          <div class="thumb-wide img" style="background-image: url({{ item }})"></div>
-        </figure>
-      </a><br></div>
-      {% endfor %}
-    </div>
-
-  </div>
+<h1>{{ page.title }}</h1>
+{{ content }}
+<div class="row">
+  {% for item in page.items %}
+  <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item }}" >
+    <figure>
+      <div class="thumb-wide img" style="background-image: url({{ item }})"></div>
+    </figure>
+  </a><br></div>
+  {% endfor %}
 </div>

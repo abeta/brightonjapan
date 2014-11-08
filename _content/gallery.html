@@ -9,3 +9,12 @@ modified: '2014-11-07T02:21:09+00:00'
 ---
 <p>hello world</p>
 {{ site.data.facebook_photos | jsonify }}
+{% assign photos = (site.pages | where: 'category', 'gallery') %}
+
+  {% for item in page.items %}
+  <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.url }}" >
+    <figure>
+      <div class="thumb-wide img" style="background-image: url({{ item.image }})"></div>
+    </figure>
+  </a><br></div>
+  {% endfor %}
