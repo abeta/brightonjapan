@@ -11,8 +11,10 @@ module Jekyll
       require 'net/http'
       require 'rubygems'
       require 'json'
+      
+      username = Jekyll.configuration({})['profiles']['facebook'].split("/").last
 
-      entries = getdata(Jekyll.configuration({})['facebook'] + '/albums')
+      entries = getdata(username + '/albums')
       
       facebook = []
       
