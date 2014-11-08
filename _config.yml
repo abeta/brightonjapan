@@ -51,7 +51,7 @@ collections:
         title: Pages
         icon: sitemap
         output: true
-        permalink: /:path.html
+        permalink: :path.html
     events:
         title: Events
         icon: calendar
