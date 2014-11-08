@@ -9,10 +9,10 @@ sharing:
         - facebook
         - twitter
         - google
-        - linkedin
         - pinterest
+        - linkedin
         - stumbleupon
-    limit: 3
+    limit: 4
 profiles:
     provider:
         - facebook
