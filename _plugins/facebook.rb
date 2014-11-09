@@ -56,10 +56,10 @@ module Jekyll
             item['image'] = getdata(photo['id'])['source']
             item['id'] = photo['id']
             
-            site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, item['id'], item)
+            site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, item['id'], slug, item)
           end
           
-          site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, 'index', data)
+          site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, 'index', 'gallery', data)
         end
       end
     end
