@@ -45,8 +45,9 @@ module Jekyll
           data['image'] = getdata(album['cover_photo'])['source']
           data['link'] = album['id']
           
-          data['items'] = []
           photos = getdata(album['id'] + '/photos')
+          
+          slug = data['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
           
           for photo in photos
             item = Hash.new
@@ -54,14 +55,11 @@ module Jekyll
             item['title'] = photo['name']
             item['image'] = getdata(photo['id'])['source']
             item['id'] = photo['id']
-            data['items'].push(item)
-            site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, 'index', data)
+            
+            site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, item['id'], item)
           end
           
-          slug = data['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
           site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, 'index', data)
-          
-          facebook.push(data)
         end
       end
     end
