@@ -12,8 +12,8 @@ layout: default
         <form role="form" action="http://getsimpleform.com/messages?form_api_token=ee510e56c0373993fbbab9e006eaab76" method="post">
           <div class="row">
             <div class="form-group col-sm-6">
-              <label for="contact">Contact *</label>
-              <select type="text" class="form-control" name="contact" required>
+              <label for="contact">Contact</label>
+              <select type="text" class="form-control" name="contact">
                 <option value="hello@brightonjapan.com">General Enquiries</option>
                 {% for contact in contacts %}
                 {% if contact.email %}
@@ -23,7 +23,7 @@ layout: default
               </select>
             </div>
             <div class="form-group col-sm-6">
-              <label for="subject">Subject</label>
+              <label for="subject">Subject *</label>
               <input type="text" class="form-control" name="subject" required>
             </div>
           </div>
