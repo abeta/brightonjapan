@@ -67,3 +67,9 @@ collections:
     contacts:
         title: Contacts
         icon: users
+facebook_gallery:
+    exclude:
+      - 'Timeline Photos'
+      - 'Cover Photos'
+      - 'Profile Pictures'
+      - 'Photos'
