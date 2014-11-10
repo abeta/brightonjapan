@@ -53,8 +53,6 @@ module Jekyll
           
           slug = data['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
           
-          puts slug
-          
           for photo in photos
             if photo['id']
               item = Hash.new
