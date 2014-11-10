@@ -145,14 +145,18 @@ $('section, .box-list>li, .fullrow .row>*').smoove({offset: '10%'});
 $( "#contactForm" ).submit(function( event ) {
     event.preventDefault();
     
-    var $form = $( this ),
+    var $form = $(this),
         data = $form.serialize(),
-        action = $form.attr( "action" );
+        action = $form.attr("action");
         
-    var send = $.post( action, data );
+    $form.find('input').prop('disabled', 1);
     
-    send.done(function( data ) {
-        var content = $( data );
+    var $btn = $form.find('button').button('loading'),
+        send = $.post(action, data);
+    
+    send.done(function(data) {
+        var content = $(data);
+        $btn.button('reset');
         console.log(content);
     });
 });
