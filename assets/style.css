@@ -541,3 +541,6 @@ body .don-share {
 .nav-stumbleupon a {
     background-color: #eb4924;
 }
+.equal>*>.box {
+    height: 100%;
+}
