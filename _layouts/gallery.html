@@ -11,5 +11,12 @@ layout: default
       <div class="thumb-wide img" style="background-image: url(http://cdn.abemedia.co.uk?width=432&height=243&url={{ item.image }})"></div>
     </figure>
     {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-  </a><br></div>{% endfor %}
+  </a><br></div>
+  {% assign i = (forloop.index | modulo: 3) %}
+  {% assign j = (forloop.index | modulo: 2) %}
+  
+  {% if i == 0 %}<br class="visible-md-block">{% endif %}
+  {% if j == 0 %}<br class="visible-sm-block">{% endif %}
+  
+  {% endfor %}
 </div>
