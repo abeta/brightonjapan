@@ -60,9 +60,9 @@ layout: page
         <div class="box bg-pattern-2">
           <h4 class="media-heading">{{ contact.title }}</h4>
           <h5 class="media-heading">{{ contact.name }}</h5>
-         {% if contact.email %}{{ contact.email }}<br>{% endif %}
-          {% if contact.phone %}{{ contact.phone }}<br>{% endif %}
-          {% if contact.mobile %}{{ contact.mobile }}{% endif %}
+          {% if contact.email %}<i class="fa fa-fw fa-envelope"></i> {{ contact.email }}<br>{% endif %}
+          {% if contact.phone %}<i class="fa fa-fw fa-phone"></i> {{ contact.phone }}<br>{% endif %}
+          {% if contact.mobile %}<i class="fa fa-fw fa-mobile"></i> {{ contact.mobile }}{% endif %}
         </div>
       </div>
       {% endfor %}
