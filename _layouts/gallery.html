@@ -5,6 +5,7 @@ layout: default
 {% assign photos = (site.pages | where: 'category', page.slug) %}
 
 <div class="row">
+{% if photos.size > 0 %}
   {% for item in photos %}
   <div class="col-sm-6 col-md-4"><a class="thumb" href="{{site.baseurl}}{{ item.url }}" >
     <figure>
@@ -19,5 +20,6 @@ layout: default
   {% if j == 0 %}<br class="visible-sm-block">{% endif %}
   
   {% endfor %}
+  {% endif %}
   
 </div>

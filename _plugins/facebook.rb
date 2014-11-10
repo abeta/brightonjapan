@@ -49,12 +49,13 @@ module Jekyll
           
           slug = data['title'].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
           
+          puts slug
+          
           for photo in photos
             item = Hash.new
             item['id'] = photo['id']
             item['title'] = photo['name']
             item['image'] = getdata(photo['id'])['source']
-            item['id'] = photo['id']
             
             site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, item['id'], slug, item)
           end
