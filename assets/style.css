@@ -384,6 +384,9 @@ a.thumb, a.thumb:hover {
 .black, .red, .black *, .red *, .box * {
     color: #fff;
 }
+.text-danger {
+    color: #f00;
+}
 .rel {
     position: relative;
 }
