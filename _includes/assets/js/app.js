@@ -142,3 +142,21 @@ $('.box-list>li, .fullrow .row>*').each( function() {
 $('section, .box-list>li, .fullrow .row>*').smoove({offset: '10%'});
 
 */
+$( "#contactForm" ).submit(function( event ) {
+    event.preventDefault();
+    
+    var $form = $( this ),
+        data = $form.serialize(),
+        action = $form.attr( "action" );
+        
+    var send = $.post( action, data );
+    
+    send.done(function( data ) {
+        var content = $( data );
+        console.log(content);
+    });
+});
+
+$.post( "test.php", $( "#contactForm" ).serialize() );
+
+
