@@ -152,22 +152,21 @@ $( "#contactForm" ).submit(function( event ) {
         $btn = $form.find('button').button('loading');
     
     var send = $.post(action, data)
+        .always(function() {
+            $input.prop('disabled', 0);
+            $btn.button('reset');
+            $form.find('.alert').remove();
+        })
         .done(function(data) {
-            console.log(data);
-            $form[0].reset();
             if(data.status == 'sent') {
-                $form.prepend('<div class="message message-success">Message sent successfully. We will be in touch shortly.</div>');
+                $form[0].reset();
+                $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
             } else {
-                $form.prepend('<div class="message message-danger">Error (' + data.status + '): ' + data.error + '</div>');
+                $form.prepend('<div class="alert alert-danger">Error. Please check your entries and try again.</div>');
                 
             }
         })
         .fail(function(data) {
-            console.log(data);
-            $form.prepend('<div class="message message-danger">Error: ' + data.error + '</div>');
-        })
-        .always(function() {
-            $input.prop('disabled', 0);
-            $btn.button('reset');
+            $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
         });
 });
