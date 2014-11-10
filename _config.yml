@@ -1,58 +1,69 @@
 title: 'Brighton Japan Festival'
 permalink: none
 baseurl: /
-url: http://brightonjapan.com
+url: 'http://brightonjapan.com'
 timezone: Europe/London
 analytics:
     provider: google_analytics
+    tracking_id: ''
+    site_id: ''
+    token: ''
+    baseURL: ''
+    idsite: ''
+    custom: ''
 sharing:
     provider:
         - facebook
         - twitter
         - google
-        - pinterest
         - linkedin
+        - pinterest
         - stumbleupon
     limit: 4
+    style: ''
+    bubbles: ''
 profiles:
     provider:
         - facebook
         - twitter
         - pinterest
-    facebook: https://facebook.com/brightonjapanfestival
-    twitter: https://twitter.com/brightonjapan15
-    pinterest: https://pinterest.com/brightonjapan
+    facebook: 'https://facebook.com/brightonjapanfestival'
+    twitter: 'https://twitter.com/brightonjapan15'
+    pinterest: 'https://pinterest.com/brightonjapan'
+    google: ''
+    linkedin: ''
+    youtube: ''
 defaults:
-  - 
-    scope:
-        path: ""
-        type: "posts"
-    values:
-        layout: "page"
-  - 
-    scope:
-        path: ""
-        type: "pages"
-    values:
-        layout: "page"
-  - 
-    scope:
-        path: ""
-        type: "areas"
-    values:
-        layout: "area"
-  - 
-    scope:
-        path: ""
-        type: "events"
-    values:
-        layout: "event"
+    -
+        scope:
+            path: ''
+            type: posts
+        values:
+            layout: page
+    -
+        scope:
+            path: ''
+            type: pages
+        values:
+            layout: page
+    -
+        scope:
+            path: ''
+            type: areas
+        values:
+            layout: area
+    -
+        scope:
+            path: ''
+            type: events
+        values:
+            layout: event
 collections:
     content:
         title: Pages
         icon: sitemap
         output: true
-        permalink: :path.html
+        permalink: ':path.html'
     events:
         title: Events
         icon: calendar
@@ -69,7 +80,20 @@ collections:
         icon: users
 facebook_gallery:
     exclude:
-      - 'Timeline Photos'
-      - 'Cover Photos'
-      - 'Profile Pictures'
-      - 'Photos'
+        - 'Timeline Photos'
+        - 'Cover Photos'
+        - 'Profile Pictures'
+        - Photos
+description: 'Brighton Japan Festival'
+relative_permalinks: 'false'
+comments:
+    provider: '1'
+    disqus_shortname: ''
+    appid: ''
+    num_posts: null
+    width: null
+    colorscheme: ''
+    order: ''
+    site_id: ''
+    account: ''
+    custom: ''
