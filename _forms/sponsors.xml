@@ -5,8 +5,5 @@
             <field name="website" type="url" label="Website" filter="url" class="form-control" />
             <field name="image" type="media" label="Logo" filter="string" class="form-control" />
         </fieldset>
-        <fieldset name="stuff">
-            <field name="test" type="multiform" label="test" filter="array" />
-        </fieldset>
     </fields>
 </form>
