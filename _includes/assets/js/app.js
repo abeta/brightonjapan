@@ -147,22 +147,20 @@ $( "#contactForm" ).submit(function( event ) {
     
     var $form = $(this),
         data = $form.serialize(),
-        action = $form.attr("action");
+        action = $form.attr("action"),
+        $input = $form.find('input');
         
-    $form.find('input').prop('disabled', 1);
+    $input.prop('disabled', 1);
     
     var $btn = $form.find('button').button('loading'),
-        send = $.post(action, data);
-    
-    send.done(function(data) {
+        send = $.post(action, data)
+        
+    .done(function(data) {
         var content = $(data);
         console.log(content);
-    });
-    send.always(function() {
+    })
+    .always(function() {
+        $input.prop('disabled', 0);
         $btn.button('reset');
     });
 });
-
-$.post( "test.php", $( "#contactForm" ).serialize() );
-
-
