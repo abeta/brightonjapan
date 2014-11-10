@@ -12,9 +12,9 @@ module Jekyll
       self.read_yaml(File.join(base, '_layouts'), 'gallery.html')
       
       self.data['title'] = data['title']
+      self.data['slug'] = name
       self.data['image'] = data['image']
-      self.data['items'] = data['items']
-      self.data['category'] = category || 'gallery'
+      self.data['category'] = category
     end
   end
   
