@@ -2,7 +2,7 @@
 layout: page
 ---
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-sm-5">
     <p class="lead">Get in touch if you have any questions.</p>
     <div id="emailSent" class="alert alert-success hidden">Email send</div>
     <form role="form" action="http://getsimpleform.com/messages?form_api_token=ee510e56c0373993fbbab9e006eaab76" method="post">
@@ -36,16 +36,18 @@ layout: page
       </div>
     </form>
   </div>
-  <div class="col-sm-6">
+  <div class="col-sm-7">
     <div class="row equal">
       {% assign contacts = (site.contacts | where: 'published', 1 | sort: 'order') %}
       {% for contact in contacts %}
       <div class="col-sm-6">
-        <h3>{{ contact.title }}</h3>
-        <h4>{{ contact.name }}</h4>
-        {% if contact.email %}{{ contact.email }}<br>{% endif %}
-        {% if contact.phone %}{{ contact.phone }}<br>{% endif %}
-        {% if contact.mobile %}{{ contact.mobile }}{% endif %}
+        <div class="box">
+          <h3>{{ contact.title }}</h3>
+          <h4>{{ contact.name }}</h4>
+         {% if contact.email %}{{ contact.email }}<br>{% endif %}
+          {% if contact.phone %}{{ contact.phone }}<br>{% endif %}
+          {% if contact.mobile %}{{ contact.mobile }}{% endif %}
+        </div>
       </div>
       {% endfor %}
     </div>
