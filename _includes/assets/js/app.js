@@ -156,8 +156,10 @@ $( "#contactForm" ).submit(function( event ) {
     
     send.done(function(data) {
         var content = $(data);
-        $btn.button('reset');
         console.log(content);
+    });
+    send.always(function() {
+        $btn.button('reset');
     });
 });
 
