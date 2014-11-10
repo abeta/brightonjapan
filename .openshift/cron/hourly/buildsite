@@ -3,6 +3,5 @@
 if [ `TZ=GMT date +%H` == "05" ]
 then
     cd $OPENSHIFT_REPO_DIR
-    jekyll build
-    TZ=GMT date >> ${OPENSHIFT_DATA_DIR}/buildsite.log
+    bundle exec "jekyll build" >> ${OPENSHIFT_DATA_DIR}/buildsite.log
 fi
