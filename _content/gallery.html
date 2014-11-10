@@ -3,9 +3,7 @@ title: Gallery
 slug: gallery
 published: 1
 order: 5
-layout: default
+layout: gallery
 japanese: ギャラリー
 modified: '2014-11-07T02:21:09+00:00'
 ---
-{% assign photos = (site.pages | where: 'category', 'gallery') %}
-{% include module module="gallery" items=photos title=page.title %} 

@@ -37,7 +37,7 @@ module Jekyll
       albums = getdata(username + '/albums')
       
       for album in albums
-        unless album['count'].nil? || album['count'] == 0
+        unless !album && (album['count'].nil? || album['count'] == 0)
           data = Hash.new
           data['id'] = album['id']
           data['title'] = album['name']
@@ -52,12 +52,14 @@ module Jekyll
           puts slug
           
           for photo in photos
-            item = Hash.new
-            item['id'] = photo['id']
-            item['title'] = photo['name']
-            item['image'] = getdata(photo['id'])['source']
-            
-            site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, item['id'], slug, item)
+            if photo['id']
+              item = Hash.new
+              #item['id'] = photo['id']
+              item['title'] = photo['name']
+              item['image'] = getdata(photo['id'])['source']
+              
+              site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, photo['id'], slug, item)
+            end
           end
           
           site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, 'index', 'gallery', data)
