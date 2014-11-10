@@ -390,10 +390,11 @@ a.thumb, a.thumb:hover {
 .box {
     background: rgba(0,0,0,0.75);
     padding: 15px;
-    font-weight: 800;
-    text-transform: uppercase;
     color: #fff;
     margin: 0;
+}
+.equal>*>.box {
+    height: 100%;
 }
 .box-white {
     background: rgba(255,255,255,0.75);
@@ -540,7 +541,4 @@ body .don-share {
 
 .nav-stumbleupon a {
     background-color: #eb4924;
-}
-.equal>*>.box {
-    height: 100%;
 }
