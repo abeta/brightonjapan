@@ -76,4 +76,4 @@ facebook_gallery:
 description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
 comments:
-    provider: disqus
+    provider: '1'
