@@ -19,7 +19,7 @@ sharing:
         - linkedin
         - pinterest
         - stumbleupon
-    limit: 4
+    limit: '3'
     style: ''
     bubbles: ''
 profiles:
