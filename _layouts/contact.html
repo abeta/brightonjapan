@@ -11,6 +11,7 @@ layout: page
         <div class="form-group col-sm-6">
           <label for="contact">Contact *</label>
           <select type="text" class="form-control" name="contact" required>
+            <option value="hello@brightonjapan.com">General Enquiries</option>
             {% for contact in contacts %}
             {% if contact.email %}
             <option value="{{ contact.email }}">{{ contact.title }}</option>
