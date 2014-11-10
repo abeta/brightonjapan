@@ -41,7 +41,7 @@ module Jekyll
       albums = getdata(username + '/albums')
       
       for album in albums
-        unless !album && !exclude.include? album['name'] && (album['count'].nil? || album['count'] == 0)
+        unless !album && (exclude.include? album['name']) && (album['count'].nil? || album['count'] == 0)
           data = Hash.new
           data['id'] = album['id']
           data['title'] = album['name']
