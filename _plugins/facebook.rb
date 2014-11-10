@@ -62,7 +62,7 @@ module Jekyll
             end
           end
           
-          site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, 'index', 'gallery', data)
+          site.pages << FacebookAlbum.new(site, site.source, 'gallery', slug, 'gallery', data)
         end
       end
     end
