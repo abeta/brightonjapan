@@ -245,6 +245,7 @@ body>footer a {
 a.thumb, a.thumb:hover {
     color: #333;
     text-decoration:none;
+    cursor: pointer;
 }
 .thumb h3 {
     float:left;
