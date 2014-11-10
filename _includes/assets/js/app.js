@@ -156,6 +156,7 @@ $( "#contactForm" ).submit(function( event ) {
             $input.prop('disabled', 0);
             $btn.button('reset');
             $form.find('.alert').remove();
+            $('html,body').animate({ scrollTop: $form.offset().top }, 1000);
         })
         .done(function(data) {
             if(data.status == 'sent') {
