@@ -37,9 +37,9 @@ $(window).scroll(function(){
 // navbar affix
 $(function() {
     var offsetFn = function () {
-        return $(window).height() - 75;
+        return $('#nav').top();
     }
-    $('.affix-top').affix({
+    $('#nav').affix({
         offset: {
             top: offsetFn
         }
