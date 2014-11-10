@@ -153,6 +153,7 @@ $( "#contactForm" ).submit(function( event ) {
     
     var send = $.post(action, data)
         .done(function(data) {
+            console.log(data);
             $form[0].reset();
             if(data.status == 'sent') {
                 $form.prepend('<div class="message message-success">Message sent successfully. We will be in touch shortly.</div>');
@@ -162,7 +163,8 @@ $( "#contactForm" ).submit(function( event ) {
             }
         })
         .fail(function(data) {
-                $form.prepend('<div class="message message-danger">Error: ' + data.error + '</div>');
+            console.log(data);
+            $form.prepend('<div class="message message-danger">Error: ' + data.error + '</div>');
         })
         .always(function() {
             $input.prop('disabled', 0);
