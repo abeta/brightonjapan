@@ -44,8 +44,8 @@ layout: page
         <h3>{{ contact.title }}</h3>
         <h4>{{ contact.name }}</h4>
         {% if contact.email %}{{ contact.email }}<br>{% endif %}
-        {% if contact.email %}{{ contact.phone }}<br>{% endif %}
-        {% if contact.email %}{{ contact.mobile }}{% endif %}
+        {% if contact.phone %}{{ contact.phone }}<br>{% endif %}
+        {% if contact.mobile %}{{ contact.mobile }}{% endif %}
       </div>
       {% endfor %}
     </div>
