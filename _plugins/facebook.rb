@@ -56,7 +56,7 @@ module Jekyll
               item = Hash.new
               #item['id'] = photo['id']
               item['title'] = photo['name']
-              item['image'] = getdata(photo['id'])['source']
+              item['image'] = photo['source']
               
               site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, photo['id'], slug, item)
             end
