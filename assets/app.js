@@ -39,7 +39,7 @@ $(function() {
     var offsetFn = function () {
         return $(window).height() - 75;
     }
-    $('#nav').affix({
+    $('.affix-top').affix({
         offset: {
             top: offsetFn
         }
