@@ -12,16 +12,18 @@ layout: default
 {% endif %}
 
 {% assign photos = (site.pages | where: 'category', page.slug) %}
-<div class="container">
-  {% unless page.image %}<h1>{{ page.title }}</h1>{% endunless %}
-  <div class="row equal">
-    {% for item in photos %}
-      <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.url }}" >
-        <figure>
-          <div class="thumb-wide img" style="background-image: url({{ item.image }})"></div>
-        </figure>
-        {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-      </a><br></div>
-    {% endfor %}
+<div class="section" id="content">
+  <div class="container">
+    {% unless page.image %}<h1>{{ page.title }}</h1>{% endunless %}
+    <div class="row equal">
+      {% for item in photos %}
+        <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.url }}" >
+          <figure>
+            <div class="thumb-wide img" style="background-image: url({{ item.image }})"></div>
+          </figure>
+          {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
+        </a><br></div>
+      {% endfor %}
+    </div>
   </div>
 </div>
