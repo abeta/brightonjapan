@@ -18,7 +18,7 @@ layout: default
     {{ content }}
     <div class="row equal">
       {% for item in photos %}
-        <div class="col-sm-6 col-md-4"><a class="thumb" {% if page.image %}data-toggle="lightbox" data-remote="{{ item.url }}"{% else %}href="{{ item.url }}"{% endif %}>
+        <div class="col-sm-6 col-md-4"><a class="thumb" {% if page.image %}data-toggle="lightbox" data-remote="{{ item.image }}"{% else %}href="{{ item.url }}"{% endif %}>
           <figure>
             <div class="thumb-wide img" style="background-image: url({{ item.image }})"></div>
           </figure>
