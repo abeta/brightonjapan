@@ -117,6 +117,13 @@ function GetCount(ddate,iid){
         setTimeout(function(){GetCount(ddate,iid)}, 1000);
     }
 }
+
+// delegate calls to data-toggle="lightbox"
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+	event.preventDefault();
+	return $(this).ekkoLightbox();
+});
+
 /*/ smoove
 function close(a,b) {
     if(20 * Math.round(a/20) === 20 * Math.round(b/20)) return true;
