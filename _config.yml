@@ -1,16 +1,10 @@
-title: 'Brighton Japan Festival 2015 '
+title: 'Brighton Japan Festival 2015'
 permalink: none
 baseurl: /
 url: 'http://brightonjapan.com'
 timezone: Europe/London
 analytics:
     provider: google_analytics
-    tracking_id: ''
-    site_id: ''
-    token: ''
-    baseURL: ''
-    idsite: ''
-    custom: ''
 sharing:
     provider:
         - facebook
@@ -20,8 +14,6 @@ sharing:
         - pinterest
         - stumbleupon
     limit: '3'
-    style: ''
-    bubbles: ''
 profiles:
     provider:
         - facebook
@@ -30,9 +22,6 @@ profiles:
     facebook: 'https://facebook.com/brightonjapanfestival'
     twitter: 'https://twitter.com/brightonjapan15'
     pinterest: 'https://pinterest.com/brightonjapan'
-    google: ''
-    linkedin: ''
-    youtube: ''
 defaults:
     -
         scope:
@@ -88,12 +77,3 @@ description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
 comments:
     provider: '1'
-    disqus_shortname: ''
-    appid: ''
-    num_posts: null
-    width: null
-    colorscheme: ''
-    order: ''
-    site_id: ''
-    account: ''
-    custom: ''
