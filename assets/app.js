@@ -37,7 +37,7 @@ $(window).scroll(function(){
 // navbar affix
 $(function() {
     var offsetFn = function () {
-        return $('#nav').top();
+        return $('#nav').offset().top;
     }
     $('#nav').affix({
         offset: {
