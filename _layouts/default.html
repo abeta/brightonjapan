@@ -24,7 +24,7 @@
   </head>
   <body data-spy="scroll" data-target=".navbar-inverse">
   <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
-  <div id="nav" class="navbar navbar-inverse affix{% if page.slug == 'index' || page.image %}-top{% endif %} {% if page.slug == 'index' %}navbar-bottom{% endif %}" role="navigation">
+  <div id="nav" class="navbar navbar-inverse affix{% if page.slug == 'index' || page.image != nil %}-top{% endif %} {% if page.slug == 'index' %}navbar-bottom{% endif %}" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
