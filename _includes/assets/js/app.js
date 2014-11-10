@@ -148,7 +148,7 @@ $( "#contactForm" ).submit(function( event ) {
     var $form = $(this),
         data = $form.serialize(),
         action = $form.attr("action"),
-        $input = $form.find('input');
+        $input = $form.find('input, select, textarea');
         
     $input.prop('disabled', 1);
     
@@ -156,6 +156,7 @@ $( "#contactForm" ).submit(function( event ) {
         send = $.post(action, data)
         
     .done(function(data) {
+        $input.val('')
         var content = $(data);
         console.log(content);
     })
