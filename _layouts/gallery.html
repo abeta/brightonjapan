@@ -6,7 +6,7 @@ layout: default
   <h1>{{ page.title }}</h1>
   <div class="row">
     {% for item in photos %}
-      <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.url | remove: 'index.html' }}" >
+      <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ item.url }}" >
         <figure>
           <div class="thumb-wide img" style="background-image: url({{ item.image }})"></div>
         </figure>
@@ -15,5 +15,3 @@ layout: default
     {% endfor %}
   </div>
 </div>
-{{ page.slug }}
-{{ page.category }}
