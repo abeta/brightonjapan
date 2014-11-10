@@ -1,11 +1,28 @@
 ---
 layout: page
 ---
+{% assign contacts = (site.contacts | where: 'published', 1 | sort: 'order') %}
 <div class="row">
   <div class="col-sm-5">
     <p class="lead">Get in touch if you have any questions.</p>
     <div id="emailSent" class="alert alert-success hidden">Email send</div>
     <form role="form" action="http://getsimpleform.com/messages?form_api_token=ee510e56c0373993fbbab9e006eaab76" method="post">
+      <div class="row">
+        <div class="form-group col-sm-6">
+          <label for="contact">Contact *</label>
+          <select type="text" class="form-control" name="contact" required>
+            {% for contact in contacts %}
+            {% if contact.email %}
+            <option value="{{ contact.email }}">{{ contact.title }}</option>
+            {% endif %}
+            {% endfor %}
+          </select>
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="subject">Subject</label>
+          <input type="text" class="form-control" name="subject" required>
+        </div>
+      </div>
       <div class="row">
         <div class="form-group col-sm-6">
           <label for="name">Name *</label>
@@ -38,7 +55,6 @@ layout: page
   </div>
   <div class="col-sm-7">
     <div class="row equal">
-      {% assign contacts = (site.contacts | where: 'published', 1 | sort: 'order') %}
       {% for contact in contacts %}
       <div class="col-sm-6">
         <div class="box">
