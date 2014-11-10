@@ -36,12 +36,12 @@ module Jekyll
       
       username = config['profiles']['facebook'].split("/").last
       
-      exclude =  config.key?('facebook_gallery') && config['facebook_gallery'].key?('exclude') ? config['facebook_gallery']['exclude'] : ['Timeline Photos', 'Cover Photos', 'Profile Pictures']
+      exclude = config.key?('facebook_gallery') && config['facebook_gallery'].key?('exclude') ? config['facebook_gallery']['exclude'] : ['Timeline Photos', 'Cover Photos', 'Profile Pictures']
       
       albums = getdata(username + '/albums')
       
       for album in albums
-        unless !album && exclude.include?(album['name']) && (album['count'].nil? || album['count'] == 0)
+        unless !album && !exclude.include? album['name'] && (album['count'].nil? || album['count'] == 0)
           data = Hash.new
           data['id'] = album['id']
           data['title'] = album['name']
