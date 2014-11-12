@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign photos = (site.pages | where: 'category', page.slug) %}
 {% if page.image %}
-<div class="banner" style="background-image: url({{ page.image }})">
+<div class="banner" style="background-image: url(//cdn.abemedia.co.uk/?w=1280&h=400&file={{ page.image | cgi_escape }})">
   <div class="container">
     <div class="banner-text">
       <h1 class="box">{{ page.title }}</h1>
