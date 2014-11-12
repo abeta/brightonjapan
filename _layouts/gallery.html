@@ -20,7 +20,7 @@ layout: default
       {% for item in photos %}
         <div class="col-sm-6 col-md-4"><a class="thumb" {% if page.image %}data-toggle="lightbox" data-remote="{{ item.image }}" data-gallery="photoalbum"{% else %}href="{{ site.url }}{{ item.url }}"{% endif %}>
           <figure>
-            <div class="thumb-wide img" style="background-image: url(//cdn.abemedia.co.uk/?w=432&h=243&url={{ item.image | cgi_escape  }})"></div>
+            <div class="thumb-wide img" style="background-image: url(//cdn.abemedia.co.uk/?w=432&h=243&file={{ item.image | cgi_escape  }})"></div>
           </figure>
           {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
         </a><br></div>
