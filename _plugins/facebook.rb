@@ -31,7 +31,6 @@ module Jekyll
       require 'net/http'
       require 'rubygems'
       require 'json'
-      require 'open-uri'
       
       config = Jekyll.configuration({})
       
@@ -47,7 +46,7 @@ module Jekyll
           data['id'] = album['id']
           data['title'] = album['name']
           data['count'] = album['count']
-          data['image'] = URI::encode(getdata(album['cover_photo'])['source'])
+          data['image'] = getdata(album['cover_photo'])['source']
           data['link'] = album['id']
           
           photos = getdata(album['id'] + '/photos')
@@ -59,7 +58,7 @@ module Jekyll
               item = Hash.new
               #item['id'] = photo['id']
               item['title'] = photo['name']
-              item['image'] = URI::encode(photo['source'])
+              item['image'] = photo['source']
               
               site.pages << FacebookAlbum.new(site, site.source, 'gallery/' + slug, photo['id'], slug, item)
             end
