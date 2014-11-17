@@ -30,13 +30,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button> 
-<<<<<<< HEAD
-         <a class="navbar-brand brand-small" href="{{site.baseurl}}">
-          <img src="{{site.baseurl}}assets/logo_small.png" alt="{{ site.title }}" id="logo" />
-=======
          <a class="navbar-brand brand-small" href="{{site.url}}">
           <img src="{{site.url}}/assets/logo_small.png" alt="{{ site.title }}" id="logo" />
->>>>>>> 459f27abaea48b0fe3bd6e51cb47b35d13d96231
         </a>
       </div>
       <div class="collapse navbar-collapse">
@@ -45,12 +40,8 @@
         {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
         {% for item in pages %}
           <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
-<<<<<<< HEAD
-            {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{ item.url }}">{{ item.title }}{% endif %}
-=======
             <a href="{{site.url}}{{ item.url }}">
               {% if item.slug == 'index' %}Home{% else %}{{ item.title }}{% endif %}
->>>>>>> 459f27abaea48b0fe3bd6e51cb47b35d13d96231
               <small>{{ item.japanese }}</small>
             </a>
           </li>
