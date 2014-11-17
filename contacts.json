@@ -1,0 +1,10 @@
+---
+layout: nil
+---
+{% assign contacts = (site.contacts | where: "published", 1 ) %}{
+    {% for contact in contacts %}"{{ contact.slug }}": {
+        "name": "{{ contact.name }}",
+        "email": "{{ contact.email }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+}

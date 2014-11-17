@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="{{ site.author }}" />
+    <link rel="icon" href="{{ site.baseurl }}favicon.ico" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | remove:'index.html' }}"/>
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'>
+    <link href="{{site.baseurl}}assets/css/style.css" rel="stylesheet" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="{{site.baseurl}}assets/ie10-viewport-bug-workaround.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar-inverse">
+  <a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+  <div id="nav" class="navbar navbar-inverse affix-top {% if page.slug == 'index' %}navbar-bottom{% endif %}" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> 
+         <a class="navbar-brand brand-small" href="{{site.baseurl}}">
+          <img src="{{site.baseurl}}assets/logo_small.png" alt="{{ site.title }}" id="logo" />
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        
+        {% assign pages = (site.content | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
+        {% for item in pages %}
+          <li {% if item.slug == page.slug or page.collection contains item.slug %}class="active"{% endif %}>
+            {% if item.slug == 'index' %}<a href="{{site.baseurl}}">Home{% else %}<a href="{{ item.url }}">{{ item.title }}{% endif %}
+              <small>{{ item.japanese }}</small>
+            </a>
+          </li>
+        {% endfor %}
+        
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+  {{content}}
+  
+  <footer>
+    <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+        {% for provider in site.profiles.provider %}
+        <li class="visible-lg nav-{{ provider }}"><a href="{{ site.profiles[provider] }}" target="_blank"><i class="fa fa-fw fa-3x fa-{{ provider }}"></i></a>
+        {% endfor %}
+      </ul>
+      <div class="footer-left">© 2014 {{ site.title }} • Web design by ABE Media <!--a href="/sitemap">Sitemap</a--></div>
+    </div>
+  </footer>
+  <script src="{{site.baseurl}}assets/js/scripts.js"></script>
+</body>
+</html>
