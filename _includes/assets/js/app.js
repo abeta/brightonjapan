@@ -168,6 +168,7 @@ $( "#contactForm" ).submit(function( event ) {
             }
         })
         .fail(function(data) {
+            console.log(data);
             $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
         });
 });
