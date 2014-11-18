@@ -163,8 +163,8 @@ $( "#contactForm" ).submit(function( event ) {
                 $form[0].reset();
                 $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
             } else {
-                console.log(data);
-                $form.prepend('<div class="alert alert-danger">Error. Please check your entries and try again.</div>');
+                $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
+                //$form.prepend('<div class="alert alert-danger">Error. Please check your entries and try again.</div>');
                 
             }
         })
