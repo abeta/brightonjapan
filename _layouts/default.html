@@ -10,7 +10,7 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url | remove:'index.html' }}"/>
     <title>{{ page.title }} | {{ site.title }}</title>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet" type='text/css'>
-    <link href="{{site.url}}/assets/css/style.css" rel="stylesheet" />
+    <link href="{{site.url}}/assets/css/style.css?{{ site.v }}" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{site.url}}/assets/ie10-viewport-bug-workaround.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -64,6 +64,6 @@
       <div class="footer-left">© 2014 {{ site.title }} • Web design by ABE Media <!--a href="/sitemap">Sitemap</a--></div>
     </div>
   </footer>
-  <script src="{{site.url}}/assets/js/scripts.js"></script>
+  <script src="{{site.url}}/assets/js/scripts.js?{{ site.v }}"></script>
 </body>
 </html>
