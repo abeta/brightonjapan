@@ -75,5 +75,6 @@ facebook_gallery:
         - Photos
 description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
+recaptcha_public_key: '6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D'
 comments:
     provider: '1'
