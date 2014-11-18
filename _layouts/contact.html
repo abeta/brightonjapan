@@ -51,6 +51,19 @@ layout: default
             <textarea name="message" rows="5" class="form-control" required></textarea>
           </div>
           <div class="form-group">
+              <script type="text/javascript"
+                 src="http://www.google.com/recaptcha/api/challenge?k=6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D">
+              </script>
+              <noscript>
+                 <iframe src="http://www.google.com/recaptcha/api/noscript?k=6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D"
+                     height="300" width="500" frameborder="0"></iframe><br>
+                 <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                 </textarea>
+                 <input type="hidden" name="recaptcha_response_field"
+                     value="manual_challenge">
+              </noscript>
+          </div>
+          <div class="form-group">
             <button type="submit" class="btn btn-danger btn-lg">Send Enquiry</button>
             <input type='hidden' name='redirect_to' value='{{ site.url }}{{ page.url }}#sent' />
             <input type='hidden' name='form_id' value='brightonjapan' />
