@@ -156,6 +156,7 @@ $( "#contactForm" ).submit(function( event ) {
             $input.prop('disabled', 0);
             $btn.button('reset');
             $form.find('.alert').remove();
+            $('#recaptcha_reload').click();
             $('html,body').animate({ scrollTop: $('#content').offset().top }, 1000);
         })
         .done(function(data) {
