@@ -57,10 +57,10 @@ layout: default
               <noscript>
                  <iframe src="//www.google.com/recaptcha/api/noscript?k={{ site.recaptcha_public_key }}"
                      height="300" width="500" frameborder="0"></iframe><br>
-                 <textarea name="recaptcha_challenge_field" rows="3" cols="40" required>
+                 <textarea name="recaptcha_challenge_field" rows="3" cols="40">
                  </textarea>
                  <input type="hidden" name="recaptcha_response_field"
-                     value="manual_challenge">
+                     value="manual_challenge" required>
               </noscript>
           </div>
           <div class="form-group">
