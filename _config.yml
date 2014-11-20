@@ -61,6 +61,10 @@ collections:
         title: Areas
         icon: map-marker
         output: true
+    gallery:
+        title: Gallery
+        icon: camera
+        output: true
     sponsors:
         title: Sponsors
         icon: money
