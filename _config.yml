@@ -2,7 +2,9 @@ title: 'Brighton Japan Festival'
 permalink: none
 url: 'http://beta.abemedia.co.uk/brightonjapan'
 timezone: Europe/London
-exclude: [Gemfile, 'Gemfile.lock']
+exclude:
+    - Gemfile
+    - Gemfile.lock
 analytics:
     provider: google_analytics
 sharing:
@@ -18,6 +20,7 @@ profiles:
     provider:
         - facebook
         - twitter
+        - youtube
         - pinterest
     facebook: 'https://facebook.com/brightonjapanfestival'
     twitter: 'https://twitter.com/brightonjapan15'
@@ -79,7 +82,8 @@ facebook_gallery:
         - Photos
 description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
-recaptcha_public_key: '6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D'
+recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
     provider: '1'
 v: 4a
+baseurl: /
