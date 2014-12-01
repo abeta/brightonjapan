@@ -15,7 +15,7 @@ sharing:
         - linkedin
         - pinterest
         - stumbleupon
-    limit: '3'
+    limit: '6'
 profiles:
     provider:
         - facebook
