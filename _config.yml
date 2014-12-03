@@ -73,13 +73,7 @@ collections:
     contacts:
         title: Contacts
         icon: users
-facebook_gallery:
-    exclude:
-        - 'Timeline Photos'
-        - 'Cover Photos'
-        - 'Profile Pictures'
-        - Photos
-description: 'Brighton Japan Festival '
+description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
