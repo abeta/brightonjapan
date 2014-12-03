@@ -15,7 +15,7 @@ sharing:
         - linkedin
         - pinterest
         - stumbleupon
-    limit: ''
+    limit: '3'
 profiles:
     provider:
         - facebook
@@ -79,7 +79,7 @@ facebook_gallery:
         - 'Cover Photos'
         - 'Profile Pictures'
         - Photos
-description: 'Brighton Japan Festival'
+description: 'Brighton Japan Festival '
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
 comments:
