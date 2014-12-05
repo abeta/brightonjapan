@@ -1,4 +1,4 @@
-$("h1").fitText();
+/*$("h1").fitText();*/
 
 // smooth scroll to anchor
 $(function() {
