@@ -59,8 +59,8 @@ collections:
         title: Events
         icon: calendar
         output: true
-    areas:
-        title: Areas
+    venues:
+        title: Venues
         icon: map-marker
         output: true
     gallery:

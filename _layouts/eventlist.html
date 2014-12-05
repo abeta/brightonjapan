@@ -9,7 +9,7 @@ layout: default
     {{ content }}
     <br><br>
     <div class="row">
-      {% assign areas = (site.areas | where: 'published', 1 | sort: 'order') %}
+      {% assign areas = (site.venues | where: 'published', 1 | sort: 'order') %}
       {% for area in areas %}
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
