@@ -1,3 +1,5 @@
+$("h1").fitText();
+
 // smooth scroll to anchor
 $(function() {
   $('a[href*=#]:not([href=#],.carousel-control)').click(function() {
