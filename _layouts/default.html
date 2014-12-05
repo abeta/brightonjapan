@@ -57,7 +57,7 @@
           <li {% if item.slug == page.slug or page.collection == item.slug or page.app == item.slug %}class="active"{% endif %}>
             <a href="{{site.url}}{{ item.url }}">
               {% if item.slug == 'index' %}Home{% else %}{{ item.title }}{% endif %}
-              <small>{{ item.japanese }}{{page.app}}</small>
+              <small>{{ item.japanese }}</small>
             </a>
           </li>
         {% endfor %}
