@@ -49,6 +49,12 @@ defaults:
             type: events
         values:
             layout: event
+    -
+        scope:
+            path: ''
+            type: albums
+        values:
+            layout: gallery
 collections:
     content:
         output: true
@@ -59,8 +65,10 @@ collections:
         output: true
     gallery:
         output: true
+        permalink: 'photos/:album/:path.html'
     albums:
         output: true
+        permalink: 'photos/:path.html'
     sponsors:
     contacts:
 description: 'Brighton Japan Festival'
