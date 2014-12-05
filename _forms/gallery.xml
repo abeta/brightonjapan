@@ -2,6 +2,7 @@
 <form>
     <fields>
         <fieldset name="options">
+            <field name="album" type="itemlist" label="Album" filter="string" class="form-control" app="albums" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
         </fieldset>
     </fields>
