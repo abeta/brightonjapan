@@ -12,11 +12,11 @@ gallery:
     icon: camera
     items:
         gallery:
-            title: Gallery
+            title: Photos
             icon: camera
         albums:
             title: Albums
-            icon: folder-o
+            icon: folder
 sponsors:
     title: Sponsors
     icon: money
