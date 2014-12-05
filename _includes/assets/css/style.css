@@ -176,6 +176,7 @@ body>footer a {
 .banner .banner-text {
     position:absolute;
     bottom: 30px;
+    max-width: 100%;
 }
 .banner .banner-text.right {
     position:absolute;
