@@ -10,7 +10,7 @@ layout: default
     <div class="row">
       {% assign items = site.events | where: 'published', 1 | sort: 'start_date' %}
       {% for item in items %}{% if item.price %}
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="box bg-pattern-2">
           <div class="pull-right">
             <div class="input-group">
