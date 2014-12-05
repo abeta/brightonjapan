@@ -51,28 +51,16 @@ defaults:
             layout: event
 collections:
     content:
-        title: Pages
-        icon: sitemap
         output: true
         permalink: ':path.html'
     events:
-        title: Events
-        icon: calendar
         output: true
     venues:
-        title: Venues
-        icon: map-marker
         output: true
     gallery:
-        title: Gallery
-        icon: camera
         output: true
     sponsors:
-        title: Sponsors
-        icon: money
     contacts:
-        title: Contacts
-        icon: users
 description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
