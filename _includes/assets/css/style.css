@@ -188,6 +188,10 @@ body>footer a {
 }
 .banner .banner-text h1.box{
     clear: both;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
 }
 
 .btn {
