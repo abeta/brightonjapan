@@ -2,7 +2,7 @@
 <form>
     <fields>
         <fieldset name="advanced">
-            <field name="collection" type="collection" label="Collection" filter="string" class="form-control" />
+            <field name="app" type="collection" label="Collection" filter="string" class="form-control" />
         </fieldset>
     </fields>
 </form>
