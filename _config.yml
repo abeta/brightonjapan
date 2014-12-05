@@ -59,6 +59,8 @@ collections:
         output: true
     gallery:
         output: true
+    albums:
+        output: true
     sponsors:
     contacts:
 description: 'Brighton Japan Festival'
