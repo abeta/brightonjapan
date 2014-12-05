@@ -2,7 +2,7 @@
 <form>
     <fields>
         <fieldset name="widgets" title="Widgets">
-            <field name="carousel" type="itemlist" label="Slideshow items" filter="string" class="form-control" app="events" multiple="true" />
+            <field name="carousel" type="itemlist" label="Slideshow items" class="form-control" app="events" multiple="true" />
             <field name="countdown" type="datetime" label="Countdown date" filter="date" class="form-control" />
         </fieldset>
     </fields>
