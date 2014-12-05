@@ -18,7 +18,7 @@ layout: default
     {{ content }}
     <div class="row equal">
       {% for item in photos %}
-        <div class="col-sm-4 col-md-3"><a class="thumb" {% if page.image %}data-toggle="lightbox" data-remote="//cdn.donlabs.com/800x600/brightonjapan/{{ item.image }}" data-gallery="photoalbum"{% else %}href="{{ site.url }}{{ item.url }}"{% endif %}>
+        <div class="col-sm-4 col-md-3"><a class="thumb" {% if page.image %}data-toggle="lightbox" data-remote="//cdn.donlabs.com/800x0/brightonjapan/{{ item.image }}" data-gallery="photoalbum"{% else %}href="{{ site.url }}{{ item.url }}"{% endif %}>
           <figure>
             <div class="thumb-square img" style="background-image: url(//cdn.donlabs.com/432x243/brightonjapan/{{ item.image }})"></div>
           </figure>
