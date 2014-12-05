@@ -3,7 +3,7 @@
     <fields>
         <fieldset name="options">
             <field name="parent" type="itemlist" label="Parent Event" filter="string" class="form-control" app="events" limit="true" />
-            <field name="area" type="itemlist" label="Area" filter="string" class="form-control" app="areas" admintable="true" />
+            <field name="area" type="itemlist" label="Venue" filter="string" class="form-control" app="venues" admintable="true" />
             <field name="sponsor" type="itemlist" label="Sponsor" filter="string" class="form-control" app="sponsors" admintable="true" />
             <field name="image" type="media" label="Image" filter="string" class="form-control" />
         </fieldset>
