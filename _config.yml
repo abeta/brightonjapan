@@ -64,8 +64,6 @@ collections:
     venues:
         output: true
     gallery:
-        output: true
-        permalink: 'photos/:album/:path.html'
     albums:
         output: true
         permalink: 'photos/:path.html'
