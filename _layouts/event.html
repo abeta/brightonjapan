@@ -7,11 +7,13 @@ layout: default
         <!--
         {% if page.start_date %}
         <div class="box box-white h3"><i class="fa fa-calendar"></i> {{ page.start_date | date: '%A, %d %B' }}</div>
+        {% unless page.all_day %}
         <div class="box box-white h3"><i class="fa fa-clock-o"></i>
           {% capture minutes %}{{ page.start_date | date: '%M' }}{% endcapture %}
           {{ page.start_date | date: '%-I' }}{% unless minutes == '00' %}:{{ minutes }}{% endunless %}
           {{ page.start_date | date: '%p' }}
         </div>
+        {% endunless %}
         {% endif %}
         -->
         <h1 class="box">{{ page.title }}</h1>
