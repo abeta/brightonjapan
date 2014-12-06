@@ -57,9 +57,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .navbar .brand-small {
     padding: 5px 15px;
 }
-.brand-small img, .brand-big img{
+.brand-small img {
     max-width: 100%;
     position: absolute;
+    height:30px;
+    margin-top:5px;
 }
 .navbar-inverse {
     background-color: #000;
@@ -102,10 +104,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     .navbar .brand-small {
         padding: 15px;
         height: 70px;
-    }
-    .navbar .brand-small img {
-        height:30px;
-        margin-top:5px;
     }
     .navbar.affix-top {
         position: absolute;
