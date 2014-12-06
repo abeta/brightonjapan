@@ -16,7 +16,7 @@ layout: default
           <hr>
           <ul class="media-list">
             {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', venue.slug) %}
-            {% for event in events.items %}
+            {% for event in events %}
             <li class="media"><a href="{{ site.url }}{{ event.url }}">
               <!--div class="media-left">
                 <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
