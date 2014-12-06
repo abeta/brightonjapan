@@ -40,9 +40,9 @@ defaults:
     -
         scope:
             path: ''
-            type: areas
+            type: venues
         values:
-            layout: area
+            layout: venue
     -
         scope:
             path: ''
