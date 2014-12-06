@@ -59,6 +59,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 .brand-small img, .brand-big img{
     max-width: 100%;
+    position: absolute;
 }
 .navbar-inverse {
     background-color: #000;
