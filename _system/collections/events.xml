@@ -9,8 +9,8 @@
         </fieldset>
         <fieldset name="extra" title="Event Details">
             <field name="start_date" type="datetime" label="Start Date" filter="date" class="form-control" admintable="true" />
-            <field name="all_day" type="checkbox" label="Price" filter="string" />
             <field name="end_date" type="datetime" label="End Date" filter="date" class="form-control" />
+            <field name="all_day" type="checkbox" label="All Day Event" filter="string" />
             <field name="ticket" type="url" label="Ticket Link" filter="url" class="form-control" />
             <field name="price" type="text" label="Price" filter="string" class="form-control" admintable="true" />
         </fieldset>
