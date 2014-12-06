@@ -142,8 +142,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 @media (min-width: 1200px) {
     .navbar .brand-small img {
-        height:40px;
-        margin-top:0;
+        height:38px;
+        margin-top:1px;
     }
     .navbar-inverse {
         font-size: 20px;
