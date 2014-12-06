@@ -16,7 +16,7 @@ layout: default
           <h3 class="media-heading">{{ venue.title }}</h3>
           <hr>
           <ul class="media-list">
-            {% for event in events[forloop.index0].items %}
+            {% for event in events[forloop.index].items %}
             <li class="media"><a href="{{ site.url }}{{ event.url }}">
               <!--div class="media-left">
                 <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
