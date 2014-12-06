@@ -12,7 +12,7 @@ layout: default
   
   <div class="black section bg-pattern-1">
     <div class="container">
-      <a href="{{ site.url }}tickets.html" class="btn btn-danger btn-lg pull-right">Buy Tickets</a>
+      <a href="{{ site.url }}/tickets.html" class="btn btn-danger btn-lg pull-right">Buy Tickets</a>
       <div class="datebox pull-right" id="countdown" data-date="{{ page.countdown | date: "%Y-%m-%d"}}"></div>
       <span class="text-lg">{{ page.festival_date }}</span>
     </div>
@@ -21,7 +21,7 @@ layout: default
   {% include module module="gallery" class="grey" title="Events" items=events %} 
   
   {% assign areas = (site.venues | where: 'published', 1 | sort: 'order') %}
-  {% include module module="gallery" class="red bg-pattern-1" title="Areas" items=areas %}
+  {% include module module="gallery" class="red bg-pattern-1" title="Venues" items=areas %}
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}
