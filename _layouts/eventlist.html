@@ -3,7 +3,6 @@ layout: default
 ---
 {% include modules/banner.html %}
 
-{% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | group_by: 'area') %}
 <div class="section" id="content">
   <div class="container">
     {{ content }}
@@ -16,7 +15,8 @@ layout: default
           <h3 class="media-heading">{{ venue.title }}</h3>
           <hr>
           <ul class="media-list">
-            {% for event in events[forloop.index].items %}
+            {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', venue.slug) %}
+            {% for event in events.items %}
             <li class="media"><a href="{{ site.url }}{{ event.url }}">
               <!--div class="media-left">
                 <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
