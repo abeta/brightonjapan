@@ -45,11 +45,11 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     border-color: #f00;
 }
 .navbar{
-    width:100%;
+    width: 100%;
     border-radius: 0;
     border-width: 0;
-    z-index:1030;
-    margin:0;
+    z-index: 1030;
+    margin: 0;
 }
 .brand-big {
     display: none;
@@ -60,8 +60,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 .brand-small img {
     max-width: 100%;
     position: absolute;
-    height:30px;
-    margin-top:5px;
+    height: 25px;
+    margin-top: 7px;
 }
 .navbar-inverse {
     background-color: #000;
@@ -129,8 +129,8 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
 }
 @media (min-width: 992px) {
     .navbar .brand-small img {
-        height:35px;
-        margin-top:2px;
+        height:30px;
+        margin-top:5px;
     }
     .navbar-inverse {
         font-size: 16px;
