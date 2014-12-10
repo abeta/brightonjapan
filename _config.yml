@@ -7,6 +7,7 @@ exclude:
     - Gemfile.lock
 analytics:
     provider: google_analytics
+    tracking_id: UA-36947515-1
 sharing:
     provider:
         - facebook
@@ -63,12 +64,9 @@ collections:
         output: true
     venues:
         output: true
-    gallery:
     albums:
         output: true
         permalink: 'photos/:path.html'
-    sponsors:
-    contacts:
 description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
