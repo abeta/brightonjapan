@@ -64,9 +64,15 @@ collections:
         output: true
     venues:
         output: true
+    gallery:
+        output: true
+    sponsors:
+        output: true
     albums:
         output: true
         permalink: 'photos/:path.html'
+    contacts:
+        output: true
 description: 'Brighton Japan Festival'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf15v0SAAAAAMReHqDCinChFIhv-Ve66By0f90D
