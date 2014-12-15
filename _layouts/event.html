@@ -38,11 +38,28 @@ layout: default
       <div class="col-sm-4">
       
         {% assign venue = (site.venues | where: 'slug', page.area | first) %}
-        <div class="h3">Location</div>
         <div class="rel"><a href="{{ site.url }}{{ venue.url }}">
           <div class="thumb-wide img" style="background-image: url(//cdn.donlabs.com/360x202/brightonjapan/{{ venue.image }})"></div>
           <span class="caption h3">{{ venue.title }}</span>
         </a></div>
+        
+        <div class="box bg-pattern-2">
+          <h3 class="media-heading">At this venue</h3>
+          <hr>
+          <ul class="media-list">
+            {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', page.area) %}
+            {% for event in events %}
+            <li class="media"><a href="{{ site.url }}{{ event.url }}">
+              <!--div class="media-left">
+                <div class="datebox"><span>{{ event.start_date | date:'%d' }}<small>{{ event.start_date | date:'%b' }}</small></span></div>
+              </div-->
+              <div class="media-body">
+                <h4 class="media-heading">{{ event.title }}</h4>
+              </div>
+            </a>
+            {% endfor %}
+          </ul>
+        </div>
         <hr>
       
         {% if page.sponsor %}
