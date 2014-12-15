@@ -1,6 +1,6 @@
   <div class="row equal">
     {% for item in include.params.items %}
-    <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}{{ item.url }}" data-toggle="lightbox" data-gallery="gallery" data-remote="{{ site.cdn | replace: '0x0', '1000x0' }}{{ item.image }}">
+    <div class="col-sm-6 col-md-4"><a class="thumb" href="{{ site.url }}{{ item.url }}" >
     <figure>
       <div class="thumb-wide img" style="background-image: url({{ site.cdn | replace: '0x0', '432x243' }}{{ item.image }})"></div>
     </figure>
