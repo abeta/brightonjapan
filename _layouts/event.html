@@ -40,7 +40,7 @@ layout: default
         {% assign venue = (site.venues | where: 'slug', page.area | first) %}
         <a class="thumbnail" href="{{ site.url }}{{ venue.url }}">
           <img src="//cdn.donlabs.com/360x200/brightonjapan/{{ venue.image }}">
-          <div class="h3">{{ venue.title }}</div>
+          <span class="caption">{{ venue.title }}</span>
         </a>
         <hr>
       
