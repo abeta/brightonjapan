@@ -19,7 +19,10 @@ layout: default
 
     {% assign files = (site.static_files | where: 'extname', '.jpg' | sort: 'modified_time') %}
     <div class="row">
-    {% for file in files reversed %}{% if file.path contains page.directory %}
+    {% for file in files reversed %}
+    {% assign path = (file.path | split: '/') %}
+    {% assign dir = (page.directory | split: '/' | last) %}
+    {% if path[(path | size | minus: 1)] == dir %}
       <div class="col-xs-6 col-sm-4 col-lg-3">
         <a class="thumb" data-toggle="lightbox" data-gallery="gallery" href="{{ site.cdn | replace: '0x0', '1000x0' }}{{ file.path }}">
           <figure>
