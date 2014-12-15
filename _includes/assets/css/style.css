@@ -454,6 +454,11 @@ a.box-red:hover {
     z-index:1;
     position: relative
 }
+.carousel-sponsor {
+    position: absolute;
+    right: 0;
+    bottom: 110px;
+}
 .arrow-down {
     position: absolute;
     bottom: 80px;
