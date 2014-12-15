@@ -38,9 +38,10 @@ layout: default
       <div class="col-sm-4">
       
         {% assign venue = (site.venues | where: 'slug', page.area | first) %}
-        <div class="h3">{{ venue.title }}</div>
-        <img src="//cdn.donlabs.com/360x0/brightonjapan/{{ venue.image }}">
-      
+        <a class="thumbnail" href="{{ site.url }}{{ venue.url }}">
+          <img src="//cdn.donlabs.com/360x200/brightonjapan/{{ venue.image }}">
+          <div class="h3">{{ venue.title }}</div>
+        </a>
         <hr>
       
         {% if item.sponsor %}
