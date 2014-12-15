@@ -2,7 +2,7 @@
 <form>
     <fields>
         <fieldset name="name">
-            <field name="slug" type="text" label="Slug" class="form-control" placeholder="JFIELD_ALIAS_PLACEHOLDER" filter="cmd" disabled="true" />
+            <field name="slug" type="text" label="Slug" class="form-control" placeholder="JFIELD_ALIAS_PLACEHOLDER" filter="cmd" readonly="true" />
         </fieldset>
         <fieldset name="advanced">
             <field name="sort_slides" type="list" label="Sort slides by" description="">
