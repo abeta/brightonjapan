@@ -311,7 +311,7 @@ a.thumb, a.thumb:hover {
     right: 10px;
     bottom: 10px;
 }
-.thumb figure>figcaption, img + .caption {
+.thumb figure>figcaption, img + .caption, .img + .caption {
     position: absolute;
     background: rgba(0,0,0,0.75);
     color: white;
