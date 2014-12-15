@@ -1,7 +1,7 @@
   <ul class="box-list box-list-xs">
     {% for item in include.params.items %}
     <li><a title="{{ item.title }}" href="{{ item.website }}" target="_blank">
-      <div class="thumb-wide thumb-contain img" style="background-image: url(http://cdn.donlabs.com/432x0/brightonjapan/{{ item.image }})"></div>
+      <div class="thumb-wide thumb-contain img" style="background-image: url({{ site.cdn | replace: '0x0', '432x0' }}{{ item.image }})"></div>
     </a>
     {% endfor %}
   </ul>
