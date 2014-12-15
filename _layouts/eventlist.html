@@ -8,14 +8,14 @@ layout: default
     {{ content }}
     <br><br>
     <div class="row equal">
-      {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
+      {% assign venues = (site.venues | where: 'published', 1 | sort: page.sort_venues) %}
       {% for venue in venues %}
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
           <h3 class="media-heading">{{ venue.title }}</h3>
           <hr>
           <ul class="media-list">
-            {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', venue.slug) %}
+            {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: page.sort_events | where: 'area', venue.slug) %}
             {% for event in events %}
             <li class="media"><a href="{{ site.url }}{{ event.url }}">
               <!--div class="media-left">
