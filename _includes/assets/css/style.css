@@ -328,7 +328,7 @@ a.thumb, a.thumb:hover {
     transition: all 0.6s ease;
     margin: 0;
 }
-.thumb:hover figure>figcaption, img + .caption {
+.thumb:hover figure>figcaption, .img + .caption, img + .caption {
     filter: alpha(opacity=100);
     opacity: 1;
     bottom: 0;
