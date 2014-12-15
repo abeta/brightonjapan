@@ -20,7 +20,13 @@ layout: default
     {% assign files = (site.static_files | where: 'extname', '.jpg' | sort: 'modified_time') %}
     <div class="row">
     {% for file in files %}{% if file.path contains page.directory %}
-      <div class="col-xs-6 col-sm-4 col-lg-3"><a class="thumbnail" data-toggle="lightbox" data-gallery="gallery" href="{{ site.cdn | replace: '0x0', '1000x0' }}{{ file.path }}"><img src="{{ site.cdn | replace: '0x0', '263x263' }}{{ file.path }}"></a></div>
+      <div class="col-xs-6 col-sm-4 col-lg-3">
+        <a class="thumb" data-toggle="lightbox" data-gallery="gallery" href="{{ site.cdn | replace: '0x0', '1000x0' }}{{ file.path }}">
+          <figure>
+            <img src="{{ site.cdn | replace: '0x0', '263x263' }}{{ file.path }})">
+          </figure>
+        </a>
+      </div>
     {% endif %}{% endfor %}
     </div>
   </div>
