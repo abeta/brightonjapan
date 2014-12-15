@@ -2,7 +2,7 @@
 layout: default
 ---
 {% assign slides = (site.events | where: 'published', 1 | sort: page.sort_slides) %}
-{% include modules/carousel.html category=site.events %}
+{% include modules/carousel.html category=slides %}
 
   <div class="section" id="content">
     <div class="container">
