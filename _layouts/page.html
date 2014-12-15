@@ -17,7 +17,7 @@ layout: default
           <hr>
           <ul class="media-list">
             {% for item in submenu %}
-            {{ item.title }}
+            <li><a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
