@@ -18,6 +18,7 @@ layout: default
         -->
         <h1 class="box">{{ page.title }}</h1>
           {% assign sponsor = (site.sponsors | where: 'slug', page.sponsor) %}
+          {{ sponsor | jsonify }}
           <div class="h4 box box-white">Sponsored by <br><img src="//cdn.donlabs.com/300x0/brightonjapan/{{ sponsor.image }}"></div>
       </div>
       <div class="banner-text right">
