@@ -4,6 +4,27 @@ layout: default
 {% include modules/banner.html %}
 <div class="section" id="content">
   <div class="container">
+    {% assign submenu = (site.content | where: 'parent', page.slug | sort: 'order') %}
+    {% unless submenu %}
+    {% assign submenu = (site.content | where: 'parent', page.parent | sort: 'order') %}
+    {% endunless %}
+    {% if submenu %}
+    <div class="row">
+      <div class="col-sm-8">{{ content }}</div>
+      <div class="col-sm-4">
+        <div class="box bg-pattern-2">
+          <h3 class="media-heading">Info</h3>
+          <hr>
+          <ul class="media-list">
+            {% for item in submenu %}
+            {{ item.title }}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% else %}
     {{ content }}
+    {% endif %}
   </div>
 </div>
