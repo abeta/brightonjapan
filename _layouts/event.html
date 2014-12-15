@@ -44,8 +44,6 @@ layout: default
         </a></div>
         
         <div class="box bg-pattern-2">
-          <h3 class="media-heading">At this venue</h3>
-          <hr>
           <ul class="media-list">
             {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', page.area) %}
             {% for event in events %}
