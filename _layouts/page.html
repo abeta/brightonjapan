@@ -13,9 +13,7 @@ layout: default
       <div class="col-sm-9">{{ content }}</div>
       <div class="col-sm-3">
         <div class="box bg-pattern-2">
-          <h3 class="media-heading">Info</h3>
-          <hr>
-          <ul class="media-list">
+          <ul class="nav nav-pills nav-stacked">
             {% for item in submenu %}
             <li><a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
             {% endfor %}
