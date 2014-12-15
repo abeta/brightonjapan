@@ -419,7 +419,7 @@ a.thumb, a.thumb:hover {
 .box-white, .box-white * {
     color: #000;
 }
-.box-red:hover {
+.box-red:hover, .box .nav>li>a:hover, .box .nav>li>a:focus {
     background: rgba(255,0,0,0.75);
 }
 a.box {
