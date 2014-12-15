@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-{% capture sort_slides %}{{ page.sort_slides }}{% endcapture %}
-{% assign slides = (site.events | where: 'published', 1 | sort: {{sort_slides}}) %}
+{% assign slides = (site.events | where: 'published', 1 | sort: 'order') %}
 {% include modules/carousel.html category=slides %}
 
   <div class="section" id="content">
@@ -19,8 +18,7 @@ layout: default
       <span class="text-lg">{{ page.festival_date }}</span>
     </div>
   </div>
-  {% capture sort_events %}{{ page.sort_events }}{% endcapture %}
-  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: {{sort_events}}) %}
+  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: page.sort_events) %}
   {% include module module="gallery" class="grey" title="Events" items=events %} 
   
   {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
