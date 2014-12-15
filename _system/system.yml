@@ -10,13 +10,6 @@ venues:
 gallery:
     title: Gallery
     icon: camera
-    items:
-        gallery:
-            title: Photos
-            icon: camera
-        albums:
-            title: Albums
-            icon: folder
 sponsors:
     title: Sponsors
     icon: money

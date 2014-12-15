@@ -53,7 +53,7 @@ defaults:
     -
         scope:
             path: ''
-            type: albums
+            type: gallery
         values:
             layout: gallery
 collections:
@@ -68,9 +68,6 @@ collections:
         output: true
     sponsors:
         output: true
-    albums:
-        output: true
-        permalink: 'photos/:path.html'
     contacts:
         output: true
 description: 'Brighton Japan Festival'
