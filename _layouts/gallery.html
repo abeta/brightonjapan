@@ -16,15 +16,12 @@ layout: default
   <div class="container">
     {% unless page.image %}<h1 class="page-header" style="margin-top:90px">{{ page.title }}</h1>{% endunless %}
     {{ content }}
-    <div class="row equal">
-      {% for item in photos %}
-        <div class="col-sm-4 col-md-3"><a class="thumb" {% if page.image %}data-toggle="lightbox" data-remote="//cdn.donlabs.com/800x0/brightonjapan/{{ item.image }}" data-gallery="photoalbum"{% else %}href="{{ site.url }}{{ item.url }}"{% endif %}>
-          <figure>
-            <div class="thumb-square img" style="background-image: url(//cdn.donlabs.com/432x243/brightonjapan/{{ item.image }})"></div>
-          </figure>
-          {% if item.title %}<h3>{{ item.title }}</h3>{% endif %}
-        </a><br></div>
-      {% endfor %}
+
+    {% assign files = (site.static_files | where: 'extname', '.jpg' | sort: 'modified_time') %}
+    <div class="row">
+    {% for file in files %}{% if file.path contains page.directory %}
+      <div class="col-xs-6 col-sm-4 col-lg-3"><a class="thumbnail"><img src="{{ site.cdn | replace: '0x0', '400x400' }}{{ file.path }}"></a></div>
+    {% endif %}{% endfor %}
     </div>
   </div>
 </div>

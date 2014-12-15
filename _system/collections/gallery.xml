@@ -2,7 +2,7 @@
 <form>
     <fields>
         <fieldset name="options">
-            <field name="album" type="folderlist" label="Media Folder" filter="string" class="form-control" directory="images" required="true"/>
+            <field name="directory" type="folderlist" label="Media Folder" filter="string" class="form-control" directory="images" required="true"/>
             <field name="image" type="media" label="Cover Image" filter="string" class="form-control" />
         </fieldset>
     </fields>
