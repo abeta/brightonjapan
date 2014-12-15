@@ -15,7 +15,7 @@ layout: default
         <div class="box bg-pattern-2">
           <ul class="nav nav-pills nav-stacked">
             {% for item in submenu %}
-            <li><a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
+            <li{% if item.slug == page.slug %} class="active"{% endif %}><a href="{{ site.url }}{{ item.url }}">{{ item.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
