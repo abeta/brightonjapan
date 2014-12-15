@@ -18,11 +18,11 @@ layout: default
       <span class="text-lg">{{ page.festival_date }}</span>
     </div>
   </div>
-  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date') %}
+  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: page.sort_events) %}
   {% include module module="gallery" class="grey" title="Events" items=events %} 
   
-  {% assign areas = (site.venues | where: 'published', 1 | sort: 'order') %}
-  {% include module module="gallery" class="red bg-pattern-1" title="Venues" items=areas %}
+  {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
+  {% include module module="gallery" class="red bg-pattern-1" title="Venues" items=venues %}
   
   {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
   {% include module module="sponsors" title="Sponsors" items=sponsors %}
