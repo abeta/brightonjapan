@@ -19,10 +19,10 @@ layout: default
         <h1 class="box">{{ page.title }}</h1>
       </div>
       <div class="banner-text right">
-        {% if page.price %}
+        {% if page.price and page.ticket %}
           <div class="box box-white h3">&pound;{{ page.price }}</div>
           {% if page.ticket %}<a target="_blank" href="{{ page.ticket }}" class="box box-red h3"><i class="fa fa-shopping-cart"></i> Buy Tickets</a>{% endif %}
-        {% else %}
+        {% elsif page.price == 0 %}
           <div class="box box-red h3 circle">Free</div>
         {% endif %}
       </div>
