@@ -5,10 +5,10 @@ layout: default
 <div class="section" id="content">
   <div class="container">
     {% assign submenu = (site.content | where: 'parent', page.slug | sort: 'order') %}
-    {% unless submenu | size %}
+    {% unless (submenu | size) %}
     {% assign submenu = (site.content | where: 'parent', page.parent | sort: 'order') %}
     {% endunless %}
-    {% if submenu | size %}
+    {% if (submenu | size) %}
     <div class="row">
       <div class="col-sm-9">{{ content }}</div>
       <div class="col-sm-3">
