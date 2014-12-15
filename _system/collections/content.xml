@@ -4,5 +4,8 @@
         <fieldset name="options">
             <field name="japanese" type="text" label="Japanese Title" filter="safehtml" class="form-control" admintable="true" />
         </fieldset>
+        <fieldset name="advanced">
+            <field name="layout" type="layout" label="Layout" default="page" admintable="true" />
+        </fieldset>
     </fields>
 </form>

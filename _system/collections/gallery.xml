@@ -2,8 +2,8 @@
 <form>
     <fields>
         <fieldset name="options">
-            <field name="album" type="itemlist" label="Album" filter="string" class="form-control" app="albums" required="true"/>
-            <field name="image" type="media" label="Image" filter="string" class="form-control" />
+            <field name="album" type="folderlist" label="Media Folder" filter="string" class="form-control" directory="images" required="true"/>
+            <field name="image" type="media" label="Cover Image" filter="string" class="form-control" />
         </fieldset>
     </fields>
 </form>
