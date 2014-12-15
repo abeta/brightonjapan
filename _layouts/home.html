@@ -2,7 +2,7 @@
 layout: default
 ---
 {% capture sort_slides %}{{ page.sort_slides }}{% endcapture %}
-{% assign slides = (site.events | where: 'published', 1 | sort: sort_slides) %}
+{% assign slides = (site.events | where: 'published', 1 | sort: {{sort_slides}}) %}
 {% include modules/carousel.html category=slides %}
 
   <div class="section" id="content">
