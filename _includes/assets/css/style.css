@@ -453,6 +453,16 @@ a.box-red:hover {
     text-align: right;
     z-index:999;
 }
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+}
+.carousel-indicators li.active {
+    width: 17px;
+    height: 17px;
+    border-width: 2px;
+}
 .carousel-inner .container {
     z-index:1;
     position: relative
