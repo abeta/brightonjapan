@@ -8,7 +8,7 @@ layout: default
     {{ content }}
     <br><br>
     <div class="row equal">
-      {% assign venues = (site.venues | where: 'published', 1 | sort: page.sort_venues) %}
+      {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
       {% for venue in venues %}
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
