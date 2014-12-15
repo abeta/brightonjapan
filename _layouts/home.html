@@ -20,7 +20,7 @@ layout: default
     </div>
   </div>
   {% capture sort_events %}{{ page.sort_events }}{% endcapture %}
-  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: sort_events) %}
+  {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: {{sort_events}}) %}
   {% include module module="gallery" class="grey" title="Events" items=events %} 
   
   {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
