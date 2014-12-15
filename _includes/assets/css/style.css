@@ -294,6 +294,18 @@ a.thumb, a.thumb:hover {
     transition: all 0.4s ease-in-out;
     position: relative;
 }
+figure:hover img {
+    -webkit-transition: all 10s ease-in-out;
+    -moz-transition: all 10s ease-in-out;
+    -o-transition: all 10s ease-in-out;
+    -ms-transition: all 10s ease-in-out;
+    transition: all 10s ease-in-out;
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
+}
 .thumb figure>.label {
     position:absolute;
     right: 10px;
