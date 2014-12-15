@@ -285,7 +285,6 @@ a.thumb, a.thumb:hover {
     background: #900;
     content: "";
     border-radius: 50%;
-    z-index: -1;
 }
 .thumb figure * {
     -webkit-transition: all 0.4s ease-in-out;
@@ -293,6 +292,7 @@ a.thumb, a.thumb:hover {
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    position: relative;
 }
 .thumb figure>.label {
     position:absolute;
