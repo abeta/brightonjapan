@@ -24,7 +24,7 @@
           <p class="box">{{ item.content | strip_html | truncatewords:20 }}</p>
           <a class="h4 box box-red" href="{{ site.url }}{{ item.url }}">Read More</a>
           {% assign sponsor = (site.sponsors | where: 'slug', item.sponsor) %}
-          <div class="h4 box box-white">Sponsored by <br><img src="//cdn.donlabs.com/300x0/brightonjapan/{{ sponsor }}"></div>
+          <div class="h4 box box-white">Sponsored by <br><img src="//cdn.donlabs.com/300x0/brightonjapan/{{ sponsor.image }}"></div>
         </div>
       </div>
       {% capture i %}{{ i | plus:1 }}{% endcapture %}
