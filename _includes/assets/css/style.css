@@ -413,13 +413,14 @@ a.thumb, a.thumb:hover {
 .equal>*>.box {
     height: 100%;
 }
-.box-white {
+.box-white, .box .nav>li>a:hover, .box .nav>li>a:focus {
+    background: #fff;
     background: rgba(255,255,255,0.75);
 }
 .box-white, .box-white * {
     color: #000;
 }
-.box-red:hover, .box .nav>li>a:hover, .box .nav>li>a:focus {
+.box-red:hover, .box .nav>li.active>a {
     background: rgb(255,0,0);
     background: rgba(255,0,0,0.75);
 }
