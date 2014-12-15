@@ -38,7 +38,7 @@ layout: default
       <div class="col-sm-4">
       
         {% assign venue = (site.venues | where: 'slug', page.area | first) %}
-        <a class="thumbnail" href="{{ site.url }}{{ venue.url }}">
+        <a class="rel" href="{{ site.url }}{{ venue.url }}">
           <img src="//cdn.donlabs.com/360x200/brightonjapan/{{ venue.image }}">
           <span class="caption">{{ venue.title }}</span>
         </a>
