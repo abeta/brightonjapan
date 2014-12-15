@@ -42,8 +42,10 @@ layout: default
           <div class="thumb-wide img" style="background-image: url(//cdn.donlabs.com/360x202/brightonjapan/{{ venue.image }})"></div>
           <span class="caption h3">{{ venue.title }}</span>
         </a></div>
-        
+        <br><br>
         <div class="box bg-pattern-2">
+          <h3 class="media-heading">At this venue</h3>
+          <hr>
           <ul class="media-list">
             {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', page.area) %}
             {% for event in events %}
