@@ -294,7 +294,7 @@ a.thumb, a.thumb:hover {
     transition: all 0.4s ease-in-out;
     position: relative;
 }
-.thumb figure:hover .img {
+.thumb figure:hover .img, .thumb figure:hover img {
     -webkit-transition: all 3s ease-in-out;
     -moz-transition: all 3s ease-in-out;
     -o-transition: all 3s ease-in-out;
