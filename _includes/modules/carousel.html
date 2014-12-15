@@ -27,7 +27,7 @@
           {% assign sponsor = (site.sponsors | where: 'slug', item.sponsor | first) %}
           <div class="h4 box box-white carousel-sponsor">Sponsored by <br><img src="//cdn.donlabs.com/200x0/brightonjapan/{{ sponsor.image }}"></div>
           {% else %}
-          <a class="h3 box box-red carousel-sponsor">Sponsor<br> this event</a>
+          <a href="{{ site.url }}contact.html" class="h3 box box-red carousel-sponsor">Sponsor<br> this event</a>
           {% endif %}
         </div>
       </div>
