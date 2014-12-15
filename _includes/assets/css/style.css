@@ -420,6 +420,7 @@ a.thumb, a.thumb:hover {
     color: #000;
 }
 .box-red:hover, .box .nav>li>a:hover, .box .nav>li>a:focus {
+    background: rgb(255,0,0);
     background: rgba(255,0,0,0.75);
 }
 a.box {
