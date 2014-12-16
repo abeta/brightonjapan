@@ -8,6 +8,8 @@ layout: default
     <div class="container">
       <h1 class="page-header">{{ page.title }}</h1>
       <p class="lead">{{ content | strip_html | newline_to_br }}</p>
+      {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
+      {% include module module="sponsors" title="Sponsors" items=sponsors style="raw" %}
     </div>
   </div>
   
@@ -24,5 +26,3 @@ layout: default
   {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
   {% include module module="gallery" class="red bg-pattern-1" title="Venues" items=venues %}
   
-  {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
-  {% include module module="sponsors" title="Sponsors" items=sponsors %}
