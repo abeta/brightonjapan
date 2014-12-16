@@ -8,10 +8,11 @@ layout: default
     <div class="container">
       <h1 class="page-header">{{ page.title }}</h1>
       <p class="lead">{{ content | strip_html | newline_to_br }}</p>
+      <h3 class="text-center">Sponsors</h3>
+      {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
+      {% include module module="sponsors" title="Sponsors" items=sponsors style="raw" %}
     </div>
   </div>
-  {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
-  {% include module module="sponsors" title="Sponsors" items=sponsors %}
   
   <div class="black section bg-pattern-1">
     <div class="container">
