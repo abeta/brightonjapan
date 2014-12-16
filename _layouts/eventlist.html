@@ -11,8 +11,7 @@ layout: default
       {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
       {% for venue in venues %}
       {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | where: 'area', venue.slug | sort: page.sort_events) %}
-      {% if (events | size) %}
-      
+      {% if events[0] %}
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
           <h3 class="media-heading">{{ venue.title }}</h3>
