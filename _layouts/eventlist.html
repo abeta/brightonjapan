@@ -10,12 +10,14 @@ layout: default
     <div class="row equal">
       {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
       {% for venue in venues %}
+      {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | where: 'area', venue.slug | sort: page.sort_events) %}
+      {% if (events | size) %}
+      
       <div class="col-sm-6 col-md-4">
         <div class="box bg-pattern-2">
           <h3 class="media-heading">{{ venue.title }}</h3>
           <hr>
           <ul class="media-list">
-            {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: page.sort_events | where: 'area', venue.slug) %}
             {% for event in events %}
             <li class="media"><a href="{{ site.url }}{{ event.url }}">
               <!--div class="media-left">
@@ -29,6 +31,7 @@ layout: default
           </ul>
         </div>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </div>
