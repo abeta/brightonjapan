@@ -46,11 +46,13 @@ layout: default
         </a></div>
         <br>
         
+        {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', page.area) %}
+        {% assign eventcount = (events | size) %}
+        {% if eventcount > 1 %}
         <div class="box bg-pattern-2">
           <h4 class="media-heading">Other events at {{ venue.title }}</h4>
           <hr>
           <ul class="media-list">
-            {% assign events = (site.events | where: 'parent', nil | where: 'published', 1 | sort: 'start_date' | where: 'area', page.area) %}
             {% for event in events %}
             <li class="media"><a href="{{ site.url }}{{ event.url }}">
               <!--div class="media-left">
@@ -64,6 +66,7 @@ layout: default
           </ul>
         </div>
         <br>
+        {% endif %}
       
         {% if page.sponsor %}
         {% assign sponsor = (site.sponsors | where: 'slug', page.sponsor | first) %}
