@@ -10,7 +10,7 @@ layout: default
     {% endunless %}
     {% if submenu[0] %}
     <div class="row">
-      <div class="col-sm-9">{{ content }}</div>
+      <div class="col-sm-9">{% include modules/content.html %}</div>
       <div class="col-sm-3">
         <div class="box bg-pattern-2 h4">
           <ul class="nav nav-pills nav-stacked">
