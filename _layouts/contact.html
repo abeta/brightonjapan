@@ -3,9 +3,9 @@ layout: default
 ---
 {% assign contacts = (site.contacts | where: 'published', 1 | sort: 'order') %}
 {% include modules/banner.html %}
+<div class="section black bg-pattern-1" id="content"><div class="container">{% include template/content.html %}</div></div>
 <div class="section grey" id="contactform">
   <div class="container">
-    {% include template/content.html %}
     <div class="row">
       <div class="col-sm-9">
         <form role="form" action="https://mailer.donlabs.com" method="post" id="contactForm">
