@@ -5,7 +5,7 @@ layout: default
 
 <div class="section" id="content">
   <div class="container">
-    {{ content }}
+    {% include modules/content.html %}
     <br>
     {% assign items = (site[page.app] | where: 'published', 1 | where: 'parent', nil | sort: 'order') %}
     {% include module module="gallery" items=items style="raw" %} 
