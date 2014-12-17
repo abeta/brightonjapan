@@ -9,7 +9,7 @@ layout: default
     <hr>
     <form role="form" action="https://mailer.donlabs.com" method="post" id="contactForm">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-5">
           <div class="row">
             <div class="form-group col-sm-6">
               <label for="to">Contact</label>
@@ -61,17 +61,27 @@ layout: default
               </noscript>
           </div-->
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-3">
           <div class="form-group">
             <label for="message">Message *</label>
             <textarea name="message" rows="8" class="form-control" required></textarea>
           </div>
+          <div class="form-group text-right">
+            <button type="submit" class="btn btn-danger btn-lg">Send Enquiry</button>
+            <input type='hidden' name='redirect_to' value='{{ site.url }}{{ page.url }}#sent' />
+            <input type='hidden' name='form_id' value='brightonjapan' />
+          </div>
         </div>
-      </div>
-      <div class="form-group text-right">
-        <button type="submit" class="btn btn-danger btn-lg">Send Enquiry</button>
-        <input type='hidden' name='redirect_to' value='{{ site.url }}{{ page.url }}#sent' />
-        <input type='hidden' name='form_id' value='brightonjapan' />
+        <div class="col-sm-4">
+        <div class="box bg-pattern-1">
+          <h4 class="media-heading">Downloads</h4>
+          <ul>
+            {% for download in page.downloads %}
+            <li><a href="{{ download.file }}" download>{{ download.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        </div>
       </div>
     </form>
   </div>
