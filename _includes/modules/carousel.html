@@ -5,7 +5,7 @@
         {% capture i %}0{% endcapture %}
         {% for item in include.category %}
         {% if page.carousel contains item.slug %}
-        <li data-target="#carousel" data-slide-to="{{i}}" class="{% if {{i}} == '0' %}active{% endif %}"></li>
+        <li data-toggle="tooltip" title="{{ item.title }}" data-target="#carousel" data-slide-to="{{i}}" class="{% if {{i}} == '0' %}active{% endif %}"></li>
         {% capture i %}{{ i | plus:1 }}{% endcapture %}
         {% endif %}
         {% endfor %}

@@ -1,5 +1,9 @@
 /*$("h1").fitText();*/
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 // smooth scroll to anchor
 $(function() {
   $('a[href*=#]:not([href=#],.carousel-control)').click(function() {
