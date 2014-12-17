@@ -5,7 +5,7 @@ layout: default
 
 <div class="section" id="content">
   <div class="container">
-    {{ content }}
+    {% include modules/content.html %}
     <br><br>
     <div class="row equal">
       {% assign venues = (site.venues | where: 'published', 1 | sort: 'order') %}
