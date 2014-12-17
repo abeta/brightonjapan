@@ -3,8 +3,8 @@
     <fields>
         <fieldset name="downloads">
             <field name="downloads" type="multiform" label="Downloads" filter="array">
-                <field name="title" type="text" label="Title" filter="string" class="form-control" />
-                <field name="file" type="media" label="File" filter="string" class="form-control" />
+                <field name="dl_title" type="text" label="Title" filter="string" class="form-control" />
+                <field name="dl_file" type="media" label="File" filter="string" class="form-control" />
             </field>
         </fieldset>
     </fields>
