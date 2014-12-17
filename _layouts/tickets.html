@@ -5,7 +5,7 @@ layout: default
 
 <div class="section" id="tickets">
   <div class="container">
-    {% include modules/content.html %}
+    {% include template/content.html %}
     <br>
     <div class="row">
       {% assign items = site.events | where: 'published', 1 | sort: 'start_date' %}

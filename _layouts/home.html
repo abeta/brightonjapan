@@ -7,7 +7,7 @@ layout: default
   <div class="section text-center" id="content">
     <div class="container">
       <h1 class="page-header">{{ page.title }}</h1>
-      {% include modules/content.html %}
+      {% include template/content.html %}
       <br>
       <h3 class="media-heading">Sponsored by</h3>
       {% assign sponsors = (site.sponsors | where: 'published', 1 | sort: 'order') %}
