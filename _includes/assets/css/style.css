@@ -147,9 +147,6 @@ body>footer a {
 .row-padded>div {
     padding-bottom: 30px;
 }
-.row>.form-group {
-    padding-bottom: 0;
-}
 a.thumb, a.thumb:hover {
     color: #333;
     text-decoration:none;
