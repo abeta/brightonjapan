@@ -3,12 +3,12 @@ layout: default
 ---
 {% assign contacts = (site.contacts | where: 'published', 1 | sort: 'order') %}
 {% include modules/banner.html %}
-<div class="section" id="content"><div class="container">{% include template/content.html %}</div></div>
 <div class="section grey" id="contactform">
   <div class="container">
     <form role="form" action="https://mailer.donlabs.com" method="post" id="contactForm">
       <div class="row">
         <div class="col-sm-5">
+          {% include template/content.html %}
           <div class="row">
             <div class="form-group col-sm-6">
               <label for="to">Contact</label>
