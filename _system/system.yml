@@ -4,9 +4,10 @@ content:
 events:
     title: Events
     icon: calendar
-venues:
-    title: Venues
-    icon: map-marker
+    items:
+        venues:
+            title: Venues
+            icon: map-marker
 gallery:
     title: Gallery
     icon: camera
