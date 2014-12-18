@@ -5,6 +5,9 @@ events:
     title: Events
     icon: calendar
     items:
+        events:
+            title: Events
+            icon: calendar
         venues:
             title: Venues
             icon: map-marker
