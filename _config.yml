@@ -1,6 +1,6 @@
 title: 'Brighton Japan Festival'
 permalink: none
-url: '//brightonjapan.com'
+url: 'https://brightonjapan.com'
 timezone: Europe/London
 exclude:
     - Gemfile
