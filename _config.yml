@@ -75,6 +75,6 @@ relative_permalinks: 'false'
 recaptcha_public_key: 6Lf55v0SAAAAAMh0yq9KLInjidvwlAJRP-MYBVND
 comments:
     provider: '1'
-v: 19e
+v: 20
 baseurl: /
 cdn: "//cdn.donlabs.com/0x0/brightonjapan/"
