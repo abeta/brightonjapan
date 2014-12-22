@@ -65,10 +65,7 @@ body>footer a {
 
 .banner {
     height: 400px;
-    background-size: cover;
-    background-position: center;
     position: relative;
-    background-image: url(../../images/events/banner.jpg);
 }
 .item>.banner {
     position: absolute;
