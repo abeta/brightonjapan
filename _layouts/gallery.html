@@ -2,15 +2,7 @@
 layout: default
 ---
 {% assign photos = (site.gallery | where: 'album', page.slug) %}
-{% if page.image %}
-<div class="banner" style="background-image: url(//cdn.donlabs.com/1280x400/brightonjapan/{{ page.image }})">
-  <div class="container">
-    <div class="banner-text">
-      <h1 class="box">{{ page.title }}</h1>
-    </div>
-  </div>
-</div>
-{% endif %}
+{% if page.image %}{% include modules/banner.html %}{% endif %}
 
 <div class="section" id="content">
   <div class="container">
