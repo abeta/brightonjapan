@@ -168,13 +168,11 @@ $( "#contactForm" ).submit(function( event ) {
             $('html,body').animate({ scrollTop: $('#content').offset().top }, 1000);
         })
         .done(function(data) {
-            if(data.status == 'sent') {
+            if(data.status == 'error') {
+                $form.prepend('<div class="alert alert-danger">Error: ' + data.message + '</div>');
+            } else {
                 $form[0].reset();
                 $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
-            } else {
-                $form.prepend('<div class="alert alert-danger">Error: ' + data.message + '</div>');
-                //$form.prepend('<div class="alert alert-danger">Error. Please check your entries and try again.</div>');
-                
             }
         })
         .fail(function(data) {
