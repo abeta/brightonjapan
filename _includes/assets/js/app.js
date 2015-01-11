@@ -166,20 +166,18 @@ $( "#contactForm" ).submit(function( event ) {
                 Recaptcha.reload();
             }
             $('html,body').animate({ scrollTop: $('#content').offset().top }, 1000);
-            
-            console.log(data);
         })
         .done(function(data) {
             if(data.status == 'sent') {
                 $form[0].reset();
                 $form.prepend('<div class="alert alert-success">Message sent successfully. We will be in touch shortly.</div>');
             } else {
-                $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
+                $form.prepend('<div class="alert alert-danger">Error: ' + data.message + '</div>');
                 //$form.prepend('<div class="alert alert-danger">Error. Please check your entries and try again.</div>');
                 
             }
         })
         .fail(function(data) {
-            $form.prepend('<div class="alert alert-danger">Error: ' + data.error + '</div>');
+            $form.prepend('<div class="alert alert-danger">Error: ' + data.message + '</div>');
         });
 });
