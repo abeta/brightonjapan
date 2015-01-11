@@ -158,7 +158,7 @@ $( "#contactForm" ).submit(function( event ) {
         $btn = $form.find('button').button('loading');
     
     var send = $.post(action, data)
-        .always(function() {
+        .always(function(data) {
             $input.prop('disabled', 0);
             $btn.button('reset');
             $form.find('.alert').remove();
@@ -166,6 +166,7 @@ $( "#contactForm" ).submit(function( event ) {
                 Recaptcha.reload();
             }
             $('html,body').animate({ scrollTop: $('#content').offset().top }, 1000);
+            console.log(data);
         })
         .done(function(data) {
             if(data.status == 'sent') {
