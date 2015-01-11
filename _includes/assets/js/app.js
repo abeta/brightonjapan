@@ -166,6 +166,7 @@ $( "#contactForm" ).submit(function( event ) {
                 Recaptcha.reload();
             }
             $('html,body').animate({ scrollTop: $('#content').offset().top }, 1000);
+            
             console.log(data);
         })
         .done(function(data) {
