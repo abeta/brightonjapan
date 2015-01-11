@@ -8,7 +8,7 @@ layout: default
     {% include template/content.html %}
     <div class="row">
       <div class="col-sm-9">
-        <form role="form" action="https://mailer.donlabs.com" method="post" id="contactForm">
+        <form role="form" action="https://send.donlabs.com/Dq" method="post" id="contactForm">
           <div class="row">
             <div class="col-sm-7">
               <div class="row">
@@ -69,8 +69,6 @@ layout: default
               </div>
               <div class="form-group text-right">
                 <button type="submit" class="btn btn-danger btn-lg">Send Enquiry</button>
-                <input type='hidden' name='redirect_to' value='{{ site.url }}{{ page.url }}#sent' />
-                <input type='hidden' name='form_id' value='brightonjapan' />
               </div>
             </div>
           </div>
