@@ -70,11 +70,11 @@ collections:
         output: true
     contacts:
         output: true
-description: 'Brighton Japan Festival'
+description: 'Brighton Japan Festival 2015'
 relative_permalinks: 'false'
 recaptcha_public_key: 6Lf55v0SAAAAAMh0yq9KLInjidvwlAJRP-MYBVND
 comments:
     provider: '1'
 v: 20g
 baseurl: /
-cdn: "//cdn.donlabs.com/0x0/brightonjapan/"
+cdn: //cdn.donlabs.com/0x0/brightonjapan/
