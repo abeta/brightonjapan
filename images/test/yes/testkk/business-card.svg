@@ -1,0 +1,37 @@
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <radialGradient fy="0" fx="0.47266" cy="0.04297" cx="0.48047" spreadMethod="pad" id="svg_3">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#8c8c8c"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#565656"/>
+  </radialGradient>
+  <radialGradient r="0.5" fy="0" fx="0.47266" cy="0.04297" cx="0.48047" spreadMethod="pad" id="svg_4">
+   <stop offset="0" stop-opacity="0.99219" stop-color="#c1c1c1"/>
+   <stop offset="1" stop-opacity="0.99219" stop-color="#848484"/>
+  </radialGradient>
+  <filter height="200%" width="200%" y="-50%" x="-50%" id="svg_6_blur">
+   <feGaussianBlur stdDeviation="3.6"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="url(#svg_4)" id="canvas_background" height="401" width="581" y="-1" x="-1"/>
+  <g display="none" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_1"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path filter="url(#svg_6_blur)" id="svg_6" d="m72.00001,282l436.00005,8l3.99994,43c-88.40002,-9.33334 -148.31555,-7.33334 -221.98224,-8c-73.66666,-0.66666 -148.31557,-2.33334 -220.01778,8l2.00003,-51z" fill="#4c4c4c"/>
+  <rect ry="3" rx="3" id="svg_5" height="252" width="450" y="71" x="65" fill="#fff"/>
+  <rect fill="#0071e2" x="65" y="139" width="71" height="71" id="svg_12"/>
+  <g id="svg_15">
+   <path fill="#ffffff" d="m90,166l0,21l19,0l-19,-21z" id="svg_13"/>
+   <path fill="#ffffff" d="m89,165l0,22l22,0l-22,-22z" id="svg_14" transform="rotate(-90 100 176)" opacity="0.5"/>
+  </g>
+  <text fill="#000000" x="155" y="193" id="svg_profession" font-size="17" font-family="Helvetica" text-anchor="left" xml:space="preserve" font-weight="normal">Web Developer</text>
+  <text fill="#000000" stroke-width="0" x="155" y="172" id="svg_username" font-size="24" font-family="Helvetica" text-anchor="left" xml:space="preserve" font-weight="bold">John Smith</text>
+  <text fill="#3f3f3f" stroke-width="0" x="156" y="244" id="svg_email" font-size="14" font-family="Helvetica" text-anchor="left" xml:space="preserve">john@example.com</text>
+  <text fill="#3f3f3f" stroke-width="0" x="155" y="264" id="svg_url" font-size="14" font-family="Helvetica" text-anchor="left" xml:space="preserve">http://www.example.com</text>
+ </g>
+</svg>
