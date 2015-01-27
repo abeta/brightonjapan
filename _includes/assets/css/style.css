@@ -294,6 +294,9 @@ a.thumb, a.thumb:hover {
 .black, .red, .black *, .red *, .box * {
     color: #fff;
 }
+.black input, .red input, .box input {
+    color: #333;
+}
 .text-danger {
     color: #f00;
 }
