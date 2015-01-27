@@ -40,12 +40,12 @@ layout: default
             <h3 class="page-header">Get notified when tickets are available</h3>
             <div class="form-group">
               <input type="hidden" name="event" id="event" value="{{ page.title }}" />
-              <label class="sr-only" for="name">Name *</label>
-              <input type="text" name="name" id="name" placeholder="Name *" class="form-control" required />
+              <label class="sr-only" for="name">Name*</label>
+              <input type="text" name="name" id="name" placeholder="Name*" class="form-control" required />
             </div>
             <div class="form-group">
-              <label class="sr-only" for="email">Email *</label>
-              <input type="email" name="email" id="email" placeholder="Email *" class="form-control" required />
+              <label class="sr-only" for="email">Email*</label>
+              <input type="email" name="email" id="email" placeholder="Email*" class="form-control" required />
             </div>
             <div class="form-group">
               <label class="sr-only" for="phone">Mobile</label>
@@ -53,6 +53,9 @@ layout: default
             </div>
             <div class="form-group">
               <button type="submit" class="btn btn-danger">Notify me!</button>
+            </div>
+            <div>
+              <small>* required</small>
             </div>
           </div>
         </form>
