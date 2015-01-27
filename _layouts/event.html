@@ -40,12 +40,18 @@ layout: default
             <h3 class="page-header">Get notified when tickets are available</h3>
             <div class="form-group">
               <input type="hidden" name="event" id="event" value="{{ page.title }}" />
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" value="" class="form-control" />
+              <label class="sr-only" for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="Name" class="form-control" />
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" value="" class="form-control" />
+              <label class="sr-only" for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label class="sr-only" for="phone">Phone</label>
+              <input type="phone" name="phone" id="phone" placeholder="Phone" class="form-control" />
+            </div>
+            <div class="form-group">
               <button type="submit" class="btn btn-default">Send</button>
             </div>
           </div>
