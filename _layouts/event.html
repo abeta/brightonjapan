@@ -35,8 +35,8 @@ layout: default
   <div class="container"> 
     <div class="row">
       <div class="col-sm-8">
-        <div class="ticket-box red bg-pattern-2">
-          <form role="form" action="https://send.donlabs.com/KQ" method="post" id="contactForm">
+        <form role="form" action="https://send.donlabs.com/KQ" method="post" id="contactForm">
+          <div class="ticket-box red bg-pattern-2">
             <h3 class="page-header">Get notified when tickets are available</h3>
             <div class="form-group form-inline">
               <input type="hidden" name="event" id="event" value="{{ page.title }}" />
@@ -46,8 +46,8 @@ layout: default
               <input type="email" name="email" id="email" value="" class="form-control" />
               <button type="submit" class="btn btn-danger btn-lg">Send</button>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
         {% include template/content.html %}
       </div>
       <div class="col-sm-3 col-sm-offset-1">
