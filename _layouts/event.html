@@ -34,7 +34,16 @@ layout: default
 <div class="section" id="content">
   <div class="container"> 
     <div class="row">
-      <div class="col-sm-8">{% include template/content.html %}</div>
+      <div class="col-sm-8">
+        <div class="box red bg-pattern-2">
+          <form class="form-inline" role="form" action="https://send.donlabs.com/Dq" method="post" id="contactForm">
+            <input type="hidden" name="event" id="event" value="{{ page.title }}" />
+            <label for="name">Name</label><input type="text" name="name" id="name" value="" />
+            <label for="email">Email</label><input type="email" name="email" id="email" value="" />
+          </form>
+        </div>
+        {% include template/content.html %}
+      </div>
       <div class="col-sm-3 col-sm-offset-1">
       
         <h3 class="media-heading">Location</h3>
