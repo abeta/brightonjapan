@@ -472,3 +472,7 @@ body .don-share {
 .nav-stumbleupon a {
     background-color: #eb4924;
 }
+.ticket-box {
+    padding:15px; 
+    margin-bottom:20px;
+}
