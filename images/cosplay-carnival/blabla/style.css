@@ -1,0 +1,5 @@
+---
+layout: nil
+---
+{% include assets/css/bootstrap.min.css %}
+{% include assets/css/theme.css %}
