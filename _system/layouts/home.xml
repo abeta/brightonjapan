@@ -16,7 +16,7 @@
                 <option value="title">Title</option>
             </field>
         </fieldset>
-        <fieldset name="widgets" title="Widgets">
+        <fieldset name="general">
             <field name="carousel" type="itemlist" label="Slideshow items" class="form-control" app="events" multiple="true" />
             <field name="countdown" type="datetime" label="Countdown date" filter="date" class="form-control" />
             <field name="festival_date" type="text" label="Festival date" filter="string" class="form-control" />
